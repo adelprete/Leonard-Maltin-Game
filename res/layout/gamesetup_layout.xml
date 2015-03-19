@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffffff"
+	android:orientation="vertical" >
+	    
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#ffffffff"
+	    android:orientation="vertical" >
+	
+	    <TextView 
+	        android:id="@+id/section"	 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:paddingTop="15.0dip"	        	
+	        android:layout_gravity="center"	    
+	        android:gravity="center"	
+	        android:text="Game Setup" 	                                   
+	        android:textSize="45.0sp" 
+	        android:textColor="#ff990000"      
+	        android:fontFamily="sans-serif-condensed" />
+	    <RelativeLayout 
+	        android:layout_gravity="left" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_marginLeft="15.0dip" 
+	        android:layout_marginTop="30.0dip">
+	        <TextView 
+	            android:id="@+id/num_players_msg" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:text="Number of Players"	            
+	            android:textSize="20.0sp" />
+	        <Spinner 
+	            android:id="@+id/players_spinner" 
+	            android:layout_width="80.0dip" 
+	            android:layout_height="wrap_content" 
+	            android:layout_toRightOf="@id/num_players_msg"	            
+	            android:entries="@array/num_players" />
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:layout_gravity="left" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_marginLeft="15.0dip" 
+	        android:layout_marginTop="20.0dip">
+	        <TextView 
+	            android:id="@+id/points_msg" 
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content" 
+	            android:text="Points to Win"	            
+	            android:textSize="20.0sp" />
+	        <Spinner 
+	            android:id="@+id/points_spinner" 
+	            android:layout_width="80.0dip" 
+	            android:layout_height="wrap_content" 
+	            android:layout_toRightOf="@id/points_msg"	            
+	            android:entries="@array/num_points" />
+	    </RelativeLayout>
+	    <Button 
+	        android:id="@+id/submit"
+	        android:layout_width="200.0dip" 
+	        android:layout_height="wrap_content" 
+	        android:layout_marginLeft="15.0dip" 
+	        android:layout_marginTop="20.0dip" 
+	        android:layout_gravity="left"	        
+	        android:background="@drawable/customcolor" 	        
+	        android:text="Start Game"	        	        	        
+	        android:textSize="20.0sp" 
+	        android:textColor="#ffffffff"
+	        android:onClick="startGame"  
+	        />
+	    <LinearLayout
+        android:orientation="vertical"	        
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="center|bottom">
+		    <ImageView 
+		        android:id="@+id/doug"
+		        android:layout_marginTop="10.0dip"
+		        android:layout_alignBottom="@id/submit"
+		        android:layout_gravity="center_horizontal|center"
+		        android:layout_width="280dp" 
+		        android:layout_height="250dp" 
+		        android:gravity="left"		        
+		        android:background="@drawable/doug2" 
+		        android:scaleType="fitXY"
+		        android:contentDescription="Picture of a Podcast" 	        
+		    	/>
+	    </LinearLayout>
+	</LinearLayout>
+</RelativeLayout>

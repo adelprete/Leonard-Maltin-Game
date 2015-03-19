@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        
+        <TextView 
+	        android:id="@+id/section"   
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_gravity="center"	  
+	        android:paddingTop="15.0dip" 	        
+	        android:gravity="center"
+	        android:text="Credits" 	        
+	        android:textSize="45.0sp" 
+	        android:textColor="#ff990000"   
+	        android:fontFamily="sans-serif-condensed" />
+        
+        <TextView 
+            android:id="@+id/doug_header" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"  
+			android:layout_marginTop="25dp"
+            android:layout_marginLeft="5.0dip"            
+            android:text="@string/doug_thanks_header"          
+            android:textSize="25.0dip" 
+            android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/doug_paragraph" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"  
+            android:layout_marginLeft="10.0dip" 
+			android:text="@string/doug_thanks_paragraph"            
+            android:textAppearance="?android:textAppearanceMedium" />
+        
+        <TextView 
+            android:id="@+id/maltin_header" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="20.0dip" 
+            android:layout_marginLeft="5.0dip" 
+            android:text="@string/maltin_thanks_header"
+            android:textSize="25.0dip" 
+            android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/maltin_paragraph" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10.0dip" 
+            android:text="@string/maltin_thanks_paragraph"
+            android:textAppearance="?android:textAppearanceMedium" />
+        
+        <TextView 
+            android:id="@+id/category_header" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="20.0dip" 
+            android:layout_marginLeft="5.0dip"  
+            android:text="@string/category_thanks_header"                      
+            android:textSize="25.0dip" 
+            android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/category_paragraph" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10.0dip" 
+            android:text="@string/category_thanks_paragraph"            
+            android:textAppearance="?android:textAppearanceMedium" />
+        
+        <TextView 
+            android:id="@+id/category_list" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="12.0dip"
+            android:layout_marginLeft="10.0dip"            
+            android:text="@string/user_list"                  
+            android:textAppearance="?android:textAppearanceMedium" 
+            android:textSize="15.0dip" />
+        
+        <TextView 
+            android:id="@+id/category_paragraph2" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="10.0dip" 
+            android:layout_marginLeft="10.0dip" 
+            android:text="@string/category_thanks_paragraph2"            
+            android:textAppearance="?android:textAppearanceMedium" />
+        
+        <TextView 
+            android:id="@+id/help_header" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="20.0dip" 
+            android:layout_marginLeft="5.0dip" 
+            android:text="@string/image_header"                       
+            android:textSize="25.0dip" 
+            android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/help_paragraph" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10.0dip" 
+            android:text="@string/image_paragraph"            
+            android:textAppearance="?android:textAppearanceMedium" />
+        
+        <TextView 
+            android:id="@+id/image_header" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="20.0dip" 
+            android:layout_marginLeft="5.0dip" 
+            android:text="@string/help_header"            
+            android:textSize="25.0dip" 
+            android:textStyle="bold" />
+        
+        <TextView 
+            android:id="@+id/image_paragraph" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10.0dip" 
+            android:text="@string/help_paragraph"            
+            android:textAppearance="?android:textAppearanceMedium"  
+            android:autoLink="email"/>
+    </LinearLayout>
+</ScrollView>

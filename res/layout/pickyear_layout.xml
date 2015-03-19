@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical"
+    android:background="#ffffffff" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <TextView 
+        android:id="@+id/game_msg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15.0dip" 
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"         
+        android:gravity="center"        
+        android:text="Player turn"
+        android:textSize="45.0sp" 
+        android:textColor="#ff990000"         
+        android:fontFamily="sans-serif-condensed" />
+    
+    <TextView 
+        android:id="@+id/section2" 
+        android:layout_below="@id/game_msg"         
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20.0dip" 
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"         
+        android:text="Choose a Year:"
+        android:textSize="25.0sp" />
+    
+    <Button 
+        android:id="@+id/year1" 
+        android:layout_below="@id/section2"         
+        android:layout_width="fill_parent" 
+        android:layout_marginLeft="130dp"
+    	android:layout_marginRight="130dp"        
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="40.0dip" 
+        android:background="@drawable/customcolor"         
+        android:minWidth="90.0dip"        
+        android:textSize="25.0sp" 
+        android:textColor="#ffffffff"         
+        android:onClick="yearOneChosen" />
+    
+    <Button 
+        android:id="@+id/year2" 
+        android:layout_below="@id/year1"         
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="40.0dip" 
+        android:layout_centerHorizontal="true" 
+        android:layout_centerVertical="true" 
+        android:layout_marginLeft="130dp"
+    	android:layout_marginRight="130dp"  
+        android:background="@drawable/customcolor"     	
+        android:minWidth="90.0dip"    	
+        android:textSize="25.0sp" 
+        android:textColor="#ffffffff"     	      
+        android:onClick="yearTwoChosen" />
+    
+    <Button 
+        android:id="@+id/year3" 
+        android:layout_below="@id/year2"         
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="40.0dip" 
+        android:layout_centerHorizontal="true" 
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="130dp"
+    	android:layout_marginRight="130dp"       
+    	android:background="@drawable/customcolor" 
+        android:minWidth="90.0dip"
+        android:textSize="25.0sp" 
+        android:textColor="#ffffffff"         
+        android:onClick="yearThreeChosen" />
+
+</LinearLayout>

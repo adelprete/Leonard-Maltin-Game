@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="#ffffffff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.maltingame.MainActivity"
+    tools:ignore="MergeRootFrame" >
+	<LinearLayout 
+	    android:orientation="vertical" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"	    
+	    android:background="#ffffffff"
+	    tools:context="com.example.maltingame.MainActivity"
+	    tools:ignore="MergeRootFrame" >
+	
+	<TextView
+	    android:id="@+id/title_str"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="fill"
+	   	android:paddingTop="45.0dp"
+	    android:gravity="center"
+	   	android:text="@string/title_game"
+	    android:fontFamily="sans-serif-condensed"	   	
+	    android:textColor="#ff000000"
+	    android:textSize="45.0dp" />
+	
+
+		<TextView
+		    android:id="@+id/please_wait"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center"
+		    android:gravity="center"		    
+		    android:layout_marginTop="60.0dp"
+		    android:text="Connecting Please wait..."
+		    android:fontFamily="sans-serif-condensed"		    
+		    android:textColor="#ff000000"
+		    android:textSize="20.0dp" />
+		
+		<Button 
+	        android:id="@+id/refresh_btn" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"	        
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:background="@drawable/customcolor"  
+			android:text="Try Again"
+	        android:textColor="#ffffffff"  
+	        android:onClick="refreshConnection"
+	        android:visibility="gone" 	        />
+    <Button 
+        android:id="@+id/start_btn"
+        android:layout_width="250.0dp" 
+        android:layout_height="wrap_content"  
+        android:layout_gravity="center" 
+		android:layout_marginTop="25.0dp"  
+        android:background="@drawable/customcolor" 		    
+		android:text="Start"  
+        android:textSize="20.0dp" 
+        android:textColor="#ffffffff"
+        android:visibility="gone"
+        android:onClick="goToGameSetup"/>
+    
+    <Button 
+        android:id="@+id/howtoplay_btn"
+        android:layout_width="250.0dp" 
+        android:layout_height="wrap_content"          
+        android:layout_gravity="center" 
+        android:layout_marginTop="15.0dp"         
+        android:background="@drawable/customcolor" 
+        android:text="How To Play"
+        android:textSize="20.0dp" 
+        android:textColor="#ffffffff"       
+        android:visibility="gone" 
+        android:onClick="goToHowToPlay"/>
+	
+	<ImageView 
+       android:id="@+id/dlm"
+       android:layout_width="wrap_content" 
+       android:layout_height="wrap_content"  
+       android:layout_marginTop="25.0dip"        
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:adjustViewBounds="true" 
+       android:src="@drawable/dlm"
+       android:contentDescription="Podcast Picture" />
+   
+	   <TextView
+	    android:id="@+id/created_by"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:text="Fan made app created by: Anthony Delprete"	    
+	    android:fontFamily="sans-serif-condensed"
+	    android:textColor="#ff000000"
+	    android:textSize="12.0dp" />
+		   
+	
+	
+	</LinearLayout>
+	<TextView
+	    android:id="@+id/version"
+	   	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+	    android:layout_gravity="right"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="right"
+	    android:text="v"	    
+	    android:fontFamily="sans-serif-condensed"
+	    android:textColor="#ff000000"
+	    android:textSize="12.0dp"/>
+</RelativeLayout>
+

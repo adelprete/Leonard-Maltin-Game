@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 
+    android:weightSum="100.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_weight="100.0">
+        
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent">
+            
+            <TextView 
+                android:id="@+id/section"                  
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                android:gravity="center"                 
+                android:paddingTop="25.0dip"                  
+                android:text="@string/how_to_play" 
+                android:textSize="45.0sp" 
+                android:textColor="#ff990000"                
+                android:fontFamily="sans-serif-condensed" />
+            
+            <TextView 
+                android:textSize="25.0sp" 
+                android:id="@+id/goal_msg" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="5.0dip" 
+                android:layout_marginTop="25.0dip" 
+                android:text="@string/goal" />
+            
+            <TextView 
+                android:id="@+id/goal_text" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10.0dip" 
+                android:layout_marginTop="5.0dip" 
+                android:text="@string/goal_text" 
+                android:textSize="20.0sp" />
+            
+            <TextView 
+                android:id="@+id/setup_msg" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="5.0dip" 
+                android:layout_marginTop="25.0dip" 
+                android:text="@string/setup"
+                android:textSize="25.0sp" />
+            
+            <TextView 
+                android:id="@+id/setup_text" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10.0dip" 
+                android:layout_marginTop="5.0dip" 
+                android:text="@string/setup_text"
+                android:textSize="20.0sp" />
+            
+            <TextView 
+                android:id="@+id/get_start_msg" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="5.0dip" 
+                android:layout_marginTop="35.0dip" 
+                android:text="@string/getting_started"
+                android:textSize="25.0sp" />
+            
+            <TextView 
+                android:id="@+id/get_started_text" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="10.0dip" 
+                android:layout_marginTop="5.0dip" 
+                android:text="@string/getting_started_text"
+                android:textSize="20.0sp" />
+            
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

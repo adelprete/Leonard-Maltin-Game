@@ -1,0 +1,2822 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Leonard Maltin Game</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_game">The\nLeonard Maltin\nGame</string>
+    <string-array name="num_players">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="num_points">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    
+    <!-- How to play strings -->
+	    <string name="goal"><u>Your Goal:</u></string>
+		<string name="goal_text"><p>Try to guess the movie based on the given clues.  Guess the right movie, you get a point.  If you guess wrong, the player that forced you to make a guess gets the point.</p></string>
+		<string name="setup"><u>Setup:</u></string>
+		<string name="setup_text">I recommend that one player be the designated reader and reads everything displayed on the screen similar to how Doug Benson does it on his podcast.  The only difference here is that everyone can play, including the reader.  If you want to pass the phone around to each person on their turn, that can work too.</string>
+	    <string name="how_to_play">How-To-Play</string>
+		<string name="getting_started"><u>Getting Started:</u></string>
+		<string name="getting_started_text">"The game begins and moves counter-clockwise from Player 1.\n\nAt the start of each round a player will choose a category and a year that the mystery movie is in.\n\nThe players will receive clues about the movie based on what Leonard Maltin wrote in his review to help with guessing the movie title.\n\nNow a round of bidding begins where the players bid on how many names they think they need to hear, starting from the bottom of the casting list, to name the movie.\n\nFor example, if the movie is Star Wars and you say you can name it in 2 names you're not going to get Mark Hamill and Harrison Ford, you're going to get the bottom 2 actors on the casting list.\n\nYou want to use all the clues and names given to you to guess the movie's title.\n\nIf you dont think you can name it in less names than the player before you, you can force them to try to guess the movie.  If the person you challenged guesses wrong, you get the point.  If they guess right, they get the point.\n\nA new round begins after the movie is revealed.\n\nThe first player to reach the chosen points to win, wins the game!"</string>
+
+	<!-- Guess Names Activity screen -->
+	    <string name="game_setup_title">Game Setup</string>
+		<string name="guess_names_screen_title">In How Many Names</string>
+		<string name="names_screen_title">Your Names Are...</string>
+		<string name="option1_str">Force the player before you to name the movie</string>
+		<string name="option2_str">Can you name it with less names?</string>
+		<string name="player_instructions1">Say aloud the names listed above and the title of the movie that you think it is.</string>
+		<string name="player_instructions2">"Once you've announced your guess, reveal the title of the movie."</string>
+		
+	<!-- Winner Activity String -->
+		<string name="winner_screen_title">Someone won!</string>
+		
+	<!-- Special Thanks String -->
+		<string name="doug_thanks_header">All credit goes to Doug Benson for the game idea</string>
+		<string name="doug_thanks_paragraph">This app was entirely fan made.  Doug Benson plays the Leonard Maltin Game on his podcast Doug Loves Movies.</string>
+		<string name="maltin_thanks_header">A lot of credit also goes to the Leonard Maltin 2015 Movie Guide</string>
+		<string name="maltin_thanks_paragraph">The Leonard Maltin 2015 Movie Guide was used for movie ratings and review snippets. The app, along with IMDB, helped shape each movies casting list</string>
+		<string name="category_thanks_header">Category Credits</string>
+		<string name="category_thanks_paragraph">Most categories were pulled from the Reddit subreddit r/lmgcategories.  Other categories were taken from the podcast submitted by twitter users who I tried to thank below.  </string>
+		<string name="category_thanks_paragraph2">"If I failed to give you credit for a category you created or I spelled your twitter handle wrong please email me and I'll make the changes.  I couldn\'t give credit to many of the categories found on reddit because the users deleted their accounts."</string>
+		<string name="user_list">"Million Dollar Baby Arm - @Topiaryskeleton\nSausagefest - @clayHansen1\nWhose Line is it Anyway - @Nateheadhadley\nWe Are Farmers - @Mantitebow\nArch Enemies - @Cuntatron\nSmaug Life - @Errantparadigm\nRow vs Wade - JeffTcaro"\nPerfect Dorm - @kojiwerner</string>
+		<string name="image_header">Image Credits</string>
+		<string name="image_paragraph">All movie images were taken from themoviedb.org</string>
+		<string name="help_header">Want to help?</string>
+		<string name="help_paragraph">Email categories and their movies to adelprete87@gmail.com.  Each category must have atleast 3 movies.  You may also send over movies that fit existing categories that are not in the game.</string>
+	<!--  All Categories -->
+			<!--  Greatest Movie Ever Told -->
+				<string name="GreatestMovieEverTold_hint">Movies featuring a narrator.</string>
+				<string-array name="GreatestMovieEverTold_array">
+		       		<item>AChristmasStory</item>
+		       		<item>Goodfellas</item>
+		        	<item>TheShawshankRedemption</item>
+		        	<item>TheSandlot</item>
+		        	<item>AmericanPsycho</item>
+			       	<item>ForrestGump</item>
+					<item>SinCity</item>
+					<item>TheUsualSuspects</item>
+					<item>FightClub</item>
+				</string-array>
+			<!-- Orlando Magic -->
+				<string name="OrlandoMagic_hint">Films featuring Orlando Bloom or Orlando Jones</string>
+				<string-array name="OrlandoMagic_array">
+				    <item>BlackHawkDown</item>
+		       		<item>Drumline</item>
+		        	<item>Elizabethtown</item>
+			       	<item>Evolution</item>
+					<item>PiratesoftheCarribean</item>
+				</string-array>
+			<!-- Nuthin' But a G Thang -->
+				<string name="NuthinButaGThang_hint">"Films that are rated G"</string>
+				<string-array name="NuthinButaGThang_array">
+				    <item>TheLionKing</item>
+				    <item>ToyStory</item>
+		       		<item>Ratatouille</item>
+				</string-array>
+			<!-- Movies Where Brad Pitt Eats -->
+				<string name="MoviesWhereBradPittEats_hint">"Movies where Brad Pitt eats something"</string>
+				<string-array name="MoviesWhereBradPittEats_array">
+				    <item>Se7en</item>
+				    <item>OceansEleven</item>
+		       		<item>TheCuriousCaseofBenjaminButton</item>
+			   		<item>FightClub</item>
+					<item>Moneyball</item>
+					<item>MrandMrsSmith</item>
+				</string-array>
+			<!-- Movies that start with the letter P -->
+				<string name="GoldenShowersPlaybook_hint">"Movies that start with the letter 'P'"</string>
+				<string-array name="GoldenShowersPlaybook_array">
+				    <item>PanicRoom</item>
+				    <item>PansLabyrinth</item>
+		       		<item>Psycho</item>
+		       		<item>Poltergeist</item>
+		       		<item>PhoneBooth</item>
+			    	<item>Primer</item>
+					<item>PiratesoftheCarribean</item>
+					<item>PointBreak</item>
+				</string-array>
+			<!-- Me love you wrong time -->
+				<string name="MeLoveYouWrongTime_hint">"Time Travel Romance Movies"</string>
+				<string-array name="MeLoveYouWrongTime_array">
+				    <item>TheTimeTravelersWife</item>
+				    <item>TheLakeHouse</item>
+		       		<item>KateandLeopold</item>
+				</string-array>
+			<!-- Quaids Awareness Month -->
+				<string name="QuaidsAwarenessMonth_hint">"Movies that Dennis or Randy Quaid act in"</string>
+				<string-array name="QuaidsAwarenessMonth_array">
+				    <item>TheDayAfterTomorrow</item>
+				    <item>TheParentTrap</item>
+		       		<item>NationalLampoonsChristmasVacation</item>
+		       		<item>IndependenceDay</item>
+		       		<item>Dragonheart</item>
+			   		<item>TheRookie</item>
+		       		<item>Kingpin</item>
+				</string-array>
+			<!-- Based on a Two Story -->
+				<string name="BasedOnATwoStory_hint">"Movies that have the word 'house' in the title"</string>
+				<string-array name="BasedOnATwoStory_array">
+				    <item>BigMommasHouse</item>
+				    <item>AnimalHouse</item>
+		       		<item>RoadHouse</item>
+		       		<item>TheHouseBunny</item>
+		       		<item>Houseof1000Corpses</item>
+		       		<item>TheLakeHouse</item>
+				</string-array>
+			<!-- The Future that was -->
+				<string name="TheFutureThatWas_hint">"Films, that when filmed, took place in the future but no longer do"</string>
+				<string-array name="TheFutureThatWas_array">
+				    <item>ASpaceOdyssey</item>
+				    <item>TwoThousandTwelve</item>
+		       		<item>EscapeFromNewYork</item>
+		       		<item>AClockworkOrange</item>
+		       		<item>IAmLegend</item>
+				</string-array>
+			<!-- Hairy Maguire -->
+				<string name="HairyMaguire_hint">"Movies where Tom Cruise has long hair"</string>
+				<string-array name="HairyMaguire_array">
+				    <item>RockofAges</item>
+				    <item>TheLastSamurai</item>
+		       		<item>Magnolia</item>
+			   		<item>InterviewwiththeVampire</item>
+				</string-array>
+			<!-- Wayan's World -->
+				<string name="WayansWorld_hint">"Films featuring atleast one of the members of the Wayans family"</string>
+				<string-array name="WayansWorld_array">
+				    <item>ScaryMovie</item>
+				    <item>ImGonnaGitYouSucka</item>
+		       		<item>AbovetheRim</item>
+					<item>WhiteChicks</item>
+					<item>DontBeaMenace</item>
+				</string-array>
+			<!-- Top Billed -->
+				<string name="TopBilled_hint">"The top billed actor is named Bill(or William, or any derivative thereof)"</string>
+				<string-array name="TopBilled_array">
+				    <item>GroundhogDay</item>
+				    <item>WildWildWest</item>
+		       		<item>StarTrekIITheWrathofKhan</item>
+					<item>Ali</item>
+				</string-array>
+			<!-- Sausage Fest --><!-- @clayHansen1 -->
+				<string name="SausageFest_hint">"Movies that have an all male cast"</string>
+				<string-array name="SausageFest_array">
+				    <item>TheThing</item>
+		       		<item>SavingPrivateRyan</item>
+		       		<item>GlengarryGlenRoss</item>
+					<item>BlackHawkDown</item>
+					<item>MasterandCommander</item>
+					<item>LordoftheFlies</item>
+					<item>ReservoirDogs</item>
+					<item>LawrenceofArabia</item>
+				</string-array>
+			<!-- Mann Made Movies -->
+				<string name="MannMadeMovies_hint">"Films directed by Michael Mann"</string>
+				<string-array name="MannMadeMovies_array">
+				    <item>Heat</item>
+				    <item>Collateral</item>
+		       		<item>PublicEnemies</item>
+		       		<item>Ali</item>
+			    	<item>TheLastoftheMohicans</item>
+					<item>MiamiVice</item>
+				</string-array>
+			<!-- Female bits -->
+				<string name="FemaleBits_hint">"Movies with a female robot"</string>
+				<string-array name="FemaleBits_array">
+				    <item>WALLE</item>
+				    <item>RiseoftheMachines</item>
+		       		<item>AustinPowersinGoldmember</item>
+					<item>TheStepfordWives</item>
+				</string-array>
+			<!-- Waist Down -->
+				<string name="WaistDown_hint">"Films featuring Joe Pantliano(Joey Pants) or John Leguizamo(Johnny Legs)"</string>
+				<string-array name="WaistDown_array">
+				    <item>TheMatrix</item>
+				    <item>SuperMarioBrothers</item>
+		       		<item>Memento</item>
+		       		<item>ThePest</item>
+	  				<item>Spawn</item>
+					<item>LandoftheDead</item>
+				</string-array>
+			<!-- In Your Face -->
+				<string name="InYourFace_hint">"Films where someone wears someone else's face"</string>
+				<string-array name="InYourFace_array">
+				    <item>FaceOff</item>
+				    <item>TheSilenceoftheLambs</item>
+		       		<item>Houseof1000Corpses</item>
+				</string-array>
+			<!-- Icy Dead People -->
+				<string name="IcyDeadPeople_hint">"Films where someone is frozen to death"</string>
+				<string-array name="IcyDeadPeople_array">
+				    <item>TheShining</item>
+				    <item>Cliffhanger</item>
+		       		<item>Titanic</item>
+					<item>DemolitionMan</item>
+				</string-array>
+			<!-- Put Me In Coach -->
+				<string name="PutMeInCoach_hint">"Films that have a focus on Air Travel or Airplanes"</string>
+				<string-array name="PutMeInCoach_array">
+				    <item>TheAviator</item>
+				    <item>ConAir</item>
+		       		<item>DieHard2</item>
+					<item>SnakesonaPlane</item>
+					<item>TheTerminal</item>
+				</string-array>
+			<!-- Dog Gone It -->
+				<string name="DogGoneIt_hint">"Films where a dog dies"</string>
+				<string-array name="DogGoneIt_array">
+				    <item>MarleyandMe</item>
+				    <item>IAmLegend</item>
+		       		<item>TurnerandHooch</item>
+		       		<item>Signs</item>
+				</string-array>
+			<!-- Whose line is it anyway --><!-- @Nateheadhadley -->
+				<string name="WhoseLineIsItAnyway_hint">"Films where someone does cocaine"</string>
+				<string-array name="WhoseLineIsItAnyway_array">
+				    <item>Blow</item>
+				    <item>AmericanPsycho</item>
+				    <item>Casino</item>
+				    <item>Crank</item>
+					<item>PulpFiction</item>
+				</string-array>
+			<!-- Will Smith Loves Pussy -->
+				<string name="WillSmithLovesPussy_hint">"Movies where Will Smith saves a cat"</string>
+				<string-array name="WillSmithLovesPussy_array">
+				    <item>MenInBlack</item>
+				    <item>EnemyoftheState</item>
+				    <item>IRobot</item>
+				</string-array>
+			<!-- Million Dollar Baby Arm --><!--@Topiaryskeleton -->
+				<string name="MillionDollarBabyArm_hint">"Movie with male frontal nudity"</string>
+				
+				<string-array name="MillionDollarBabyArm_array">
+				    <item>ForgettingSarahMarshall</item>
+				    <item>WildThings</item>
+				    <item>EasternPromises</item>
+				    <item>TheHangover</item>
+				    <item>Bruno</item>
+				</string-array>
+			<!-- We Are Farmers --><!-- @Mantitybow -->
+				<string name="WeAreFarmers_hint">"Moves that take place on a farm"</string>
+				<string-array name="WeAreFarmers_array">
+				    <item>Babe</item>
+				    <item>FieldofDreams</item>
+				    <item>Signs</item>
+				    <item>NightoftheLivingDead</item>
+				</string-array>
+			<!-- Arch Enemies --><!-- @Cuntatron -->
+				<string name="ArchEnemies_hint">"Movies where a national landmark gets destoyed"</string>
+				<string-array name="ArchEnemies_array">
+				    <item>Cloverfield</item>
+				    <item>MarsAttacks</item>
+				    <item>IndependenceDay</item>
+				    <item>XMenTheLastStand</item>
+				</string-array>
+			<!-- Smaug Life --><!-- @Errantparadigm -->
+				<string name="SmaugLife_hint">"Movies with dragons in them"</string>
+				<string-array name="SmaugLife_array">
+				    <item>Dragonheart</item>
+				    <item>ReignofFire</item>
+				    <item>Beowulf</item>
+				    <item>TheNeverendingStory</item>
+				    <item>HowtoTrainYourDragon</item>
+				    <item>DragonWars</item>
+				</string-array>
+			<!-- Perfect Dorm --><!-- @kojiwerner -->
+				<string name="PerfectDorm_hint">"College Movies"</string>
+				<string-array name="PerfectDorm_array">
+				    <item>BacktoSchool</item>
+				    <item>Accepted</item>
+				    <item>AnimalHouse</item>
+				    <item>OldSchool</item>
+				    <item>TheWaterboy</item>
+				    <item>RevengeoftheNerds</item>
+					<item>Rudy</item>
+				</string-array>
+				<string name="DayBeforeTomorrow_hint">"Movies that take place all in one day"</string>
+				<string-array name="DayBeforeTomorrow_array">
+				    <item>FerrisBuellersDayOff</item>
+				    <item>HaroldAndKumarGoToWhiteCastle</item>
+				    <item>Cloverfield</item>
+				    <item>TheGoonies</item>
+				    <item>DogDayAfternoon</item>
+				    <item>Clerks</item>
+				    <item>TrainingDay</item>
+				    <item>DieHard</item>
+				</string-array>
+
+	<!--  All  Movies    -->
+				<!--  
+					<string name="_title"></string>
+					<string name="_year"></string>
+					<string name="_rating">2 1/2 stars</string>
+					<string name="_description"></string>
+					<string name="_image"></string>
+					<string-array name="_array">
+				        <item></item>
+				        <item></item>
+				        <item></item>
+				        <item></item>
+				        <item></item>
+				        <item></item>
+				        <item></item>
+				        <item></item>
+				        <item></item>
+				        <item></item>						
+				    </string-array>
+				-->
+				<string name="DieHard_title">Die Hard</string>
+				<string name="DieHard_year">1988</string>
+				<string name="DieHard_rating">3 stars</string>
+				<string name="DieHard_description">Dynamite Action Yarn; Marred only by overlength and too many needlessly stupid supporting characters.</string>
+				<string name="DieHard_image">/sEkWkPFIcoSyP3qRiZunyOfdMpv.jpg</string>
+				<string-array name="DieHard_array">
+			        <item>Bruce Willis</item>
+					<item>Alan Rickman</item>
+					<item>Bonnie Bedelia</item>
+					<item>Alexander Godunov</item>
+					<item>Reginald VelJohnson</item>
+					<item>Paul Gleason</item>
+					<item>De\'voreaux White</item>
+					<item>William Atherton</item>
+					<item>Hart Bochner</item>
+					<item>James Shigeta</item>
+					<item>Lorenzo Caccialanza</item>
+					<item>Robery Davi</item>
+					<item>Rick Ducommun</item>
+					<item>Rebecca Broussard</item>
+			    </string-array>
+				<string name="TrainingDay_title">Training Day</string>
+				<string name="TrainingDay_year">2001</string>
+				<string name="TrainingDay_rating">2 stars</string>
+				<string name="TrainingDay_description">Starts off strongly and then gets dumber and dumber, abandoning credibility for melodrama, coincidences, and a cartoonlike climax.</string>
+				<string name="TrainingDay_image">/faGcxbIPSSUZLjYAGiguQznex1Z.jpg</string>
+				<string-array name="TrainingDay_array">
+			        <item>Denzel Washington</item>
+					<item>Ethan Hawke</item>
+					<item>Scott Glenn</item>
+					<item>Tom Berenger</item>
+					<item>Harris Yulin</item>
+					<item>Raymond J. Barry</item>
+					<item>Cliff Curtis</item>
+					<item>Dr. Dre</item>
+					<item>Snoop Dogg</item>
+					<item>Macy Gray</item>
+					<item>Eva Mendes</item>
+					<item>Nick Chinlund</item>
+			    </string-array>
+				<string name="Clerks_title">Clerks</string>
+				<string name="Clerks_year">1994</string>
+				<string name="Clerks_rating">3 stars</string>
+				<string name="Clerks_description">Well written and well-acted; more provactive and entertaining than many glossy Hollywood movies of the 90\'s.</string>
+				<string name="Clerks_image">/m4VGcPvmurbr1Gd66FbXha3NdWR.jpg</string>
+				<string-array name="Clerks_array">
+			        <item>Brian O\'Halloran</item>
+					<item>Jeff Anderson</item>
+					<item>Marilyn Ghigliotti</item>
+					<item>Lisa Spoonauer</item>
+					<item>Jason Mewes</item>
+					<item>Kevin Smith</item>
+			    </string-array>
+				<string name="DogDayAfternoon_title">Dog Day Afternoon</string>
+				<string name="DogDayAfternoon_year">1975</string>
+				<string name="DogDayAfternoon_rating">3 1/2 stars</string>
+				<string name="DogDayAfternoon_description">Incredible-but-true story; The main actor\'s performances and the flavorful atmosphere obscure the fact that this is much ado about nothing.</string>
+				<string name="DogDayAfternoon_image">/tbusEHqOfnLeA8QiqfvwDReO9NV.jpg</string>
+				<string-array name="DogDayAfternoon_array">
+			        <item>Al Pacino</item>
+					<item>John Cazale</item>
+					<item>Charles Durning</item>
+					<item>James Broderick</item>
+					<item>Chris Sarandon</item>
+					<item>Sully Boyar</item>
+			        <item>Gary Springer</item>
+			        <item>Penny Allen</item>
+			        <item>Carol Kane</item>
+					<item>Lance Henriksen</item>
+					<item>Dick Anthony Williams</item>
+					<item>Phillip Charles Mackenzie</item>
+			    </string-array>
+				<string name="TheGoonies_title">The Goonies</string>
+				<string name="TheGoonies_year">1985</string>
+				<string name="TheGoonies_rating">2 1/2 stars</string>
+				<string name="TheGoonies_description">Big, lively, and exceptionally noisy; An old fashioned adventure yarn; A likeable bunch</string>
+				<string name="TheGoonies_image">/hWXJaTCLF0V5VxSAhNe03y8EZhS.jpg</string>
+				<string-array name="TheGoonies_array">
+			        <item>Sean Astin</item>
+			        <item>Josh Brolin</item>
+			        <item>Jeff Cohen</item>
+			        <item>Corey Feldman</item>
+			        <item>Kerri Green</item>
+			        <item>Martha Plimpton</item>
+					<item>Ke Huy Quan</item>
+			        <item>Jonathan Ke Quan</item>
+			        <item>John Matuszak</item>
+			        <item>Anne Ramsey</item>
+			        <item>Joe Pantoliano</item>
+			    </string-array>
+				<string name="HaroldAndKumarGoToWhiteCastle_title">Harold And Kumar Go To White Castle</string>
+				<string name="HaroldAndKumarGoToWhiteCastle_year">2004</string>
+				<string name="HaroldAndKumarGoToWhiteCastle_rating">2 stars</string>
+				<string name="HaroldAndKumarGoToWhiteCastle_description">Good actors in the leads and a distinctive goofball vibe are definite assets, but a spotty script too often fails to deliver on its promise.</string>
+				<string name="HaroldAndKumarGoToWhiteCastle_image">/6GZYxI1sn3iKxk5cgTBupn3n4y5.jpg</string>
+				<string-array name="HaroldAndKumarGoToWhiteCastle_array">
+			        <item>Kal Penn</item>
+					<item>John Cho</item>
+			        <item>Paula Garcés</item>
+					<item>Neil Patrick Harris</item>
+					<item>David Krumholtz</item>
+					<item>Eddie Kaye Thomas</item>
+					<item>Christopher Meloni</item>
+					<item>Ryan Reynolds</item>
+					<item>Fred Willard</item>
+			        <item>Ethan Embry</item>
+					<item>Jaime Kennedy</item>
+			        <item>Malin Ackerman</item>
+			    </string-array>
+				<string name="FerrisBuellersDayOff_title">Ferris Bueller\'s Day Off</string>
+				<string name="FerrisBuellersDayOff_year">1986</string>
+				<string name="FerrisBuellersDayOff_rating">2 1/2 stars</string>
+				<string name="FerrisBuellersDayOff_description">Starts off extremely funny, then wanders through self-serious ruminations before regaining momentum for a bright finish.</string>
+				<string name="FerrisBuellersDayOff_image">/7CxqQhKmRQUu4r7MvlWQAcpvJyZ.jpg</string>
+				<string-array name="FerrisBuellersDayOff_array">
+			        <item>Matthew Broderick</item>
+			        <item>Alan Ruck</item>
+			        <item>Mia Sara</item>
+			        <item>Jeffrey Jones</item>
+			        <item>Jennifer Grey</item>
+			        <item>Cindy Pickett</item>
+			        <item>Lyman Ward</item>
+			        <item>Edie McClurg</item>
+			        <item>Charlie Sheen</item>
+			        <item>Ben Stein</item>
+			        <item>Del Close</item>
+			        <item>Virginia Capers</item>
+					<item>Louis Anderson</item>
+					<item>Max Perlich</item>
+					<item>T. Scott Coffey</item>
+					<item>Kristy Swanson</item>
+			    </string-array>
+				<string name="LandoftheDead_title">Land of the Dead</string>
+				<string name="LandoftheDead_year">2005</string>
+				<string name="LandoftheDead_rating">2 1/2 stars</string>
+				<string name="LandoftheDead_description">Well produced and suspenseful, but we\'ve seen it all before and it never really catches fire.</string>
+				<string name="LandoftheDead_image">/auPv1B8wVHnDn9ypAxeit44CFMN.jpg</string>
+				<string-array name="LandoftheDead_array">
+			        <item>Simon Baker</item>
+			        <item>John Leguizamo</item>
+			        <item>Dennis Hopper</item>
+			        <item>Asia Argento</item>
+			        <item>Robert Joy</item>
+			        <item>Eugene Clark</item>
+			        <item>Joanne Boland</item>
+			        <item>Tony Nappo</item>
+			    </string-array>
+				<string name="Rudy_title">Rudy</string>
+				<string name="Rudy_year">1993</string>
+				<string name="Rudy_rating">3 stars</string>
+				<string name="Rudy_description">Rock-solid. Immensely entertaining. Well acted crowd pleaser.</string>
+				<string name="Rudy_image">/zQdYrlENSC2VOs9GVv3XjfHJfT0.jpg</string>
+				<string-array name="Rudy_array">
+			        <item>Sean Astin</item>
+			        <item>Ned Beatty</item>
+			        <item>Robert Prosky</item>
+			        <item>Charles S. Dutton</item>
+			        <item>Lili Taylor</item>
+			        <item>Jon Favreau</item>
+			        <item>Jason Miller</item>
+			        <item>Vince Vaughn</item>
+			    </string-array>
+				<string name="RevengeoftheNerds_title">Revenge of the Nerds</string>
+				<string name="RevengeoftheNerds_year">1984</string>
+				<string name="RevengeoftheNerds_rating">2 stars</string>
+				<string name="RevengeoftheNerds_description">Not Bad. Helped by two leads\' likable performances.</string>
+				<string name="RevengeoftheNerds_image">/cJI2IYiKUHh9PS8boUlFdWnjKN6.jpg</string>
+				<string-array name="RevengeoftheNerds_array">
+			        <item>Robert Carradine</item>
+			        <item>Anthony Edwards</item>
+			        <item>Timothy Busfield</item>
+			        <item>Andrew Cassese</item>
+			        <item>Curtis Armstrong</item>
+			        <item>Larry B. Scott</item>
+			        <item>Julie Montgomery</item>
+			        <item>Michelle Meyrink</item>
+					<item>Ted McGinley</item>
+					<item>Matt Salinger</item>
+					<item>John Goodman</item>
+					<item>James Cromwell</item>
+			    </string-array>
+				<string name="TheWaterboy_title">The Waterboy</string>
+				<string name="TheWaterboy_year">1998</string>
+				<string name="TheWaterboy_rating">3 stars</string>
+				<string name="TheWaterboy_description">Likeable, crowd-pleasing comedy with heart</string>
+				<string name="TheWaterboy_image">/4uMu6zO4CQICqyivJonApHaXZcH.jpg</string>
+				<string-array name="TheWaterboy_array">
+			        <item>Adam Sandler</item>
+			        <item>Kathy Bates</item>
+			        <item>Fairuza Balk</item>
+			        <item>Henry Winkler</item>
+			        <item>Jerry Reed</item>
+			        <item>Larry Gilliard Jr.</item>
+			        <item>Blake Clark</item>
+			        <item>Clint Howard</item>
+					<item>Rob Schneider</item>
+			    </string-array>
+				<string name="Accepted_title">Accepted</string>
+				<string name="Accepted_year">2006</string>
+				<string name="Accepted_rating">2 stars</string>
+				<string name="Accepted_description">Premise is so far-fetched that it keeps you watching just to find out how it\'s going to resolve itself.</string>
+				<string name="Accepted_image">/p6RwfhYGPUsqf4D0fz5O9KqtSsi.jpg</string>
+				<string-array name="Accepted_array">
+			        <item>Justin Long</item>
+			        <item>Jonah Hill</item>
+			        <item>Adam Herschman</item>
+			        <item>Blake Lively</item>
+			        <item>Columbus Short</item>
+			        <item>Maria Thayer</item>
+			        <item>Lewis Black</item>
+			        <item>Anthony Heald</item>
+			    </string-array>
+				<string name="BacktoSchool_title">Back to School</string>
+				<string name="BacktoSchool_year">1986</string>
+				<string name="BacktoSchool_rating">3 stars</string>
+				<string name="BacktoSchool_image">/gLQnRIFiP6qJUvdWpj6eGaKb0fp.jpg</string>
+				<string name="BacktoSchool_description">Full of one  liners. The main character is so likeable.</string>
+				<string-array name="BacktoSchool_array">
+			        <item>Rodney Dangerfield</item>
+			        <item>Sally Kellerman</item>
+			        <item>Burt Young</item>
+			        <item>Keith Gordon</item>
+			        <item>Robert Downey Jr.</item>
+			        <item>Paxton Whitehead</item>
+			        <item>Terry Farrell</item>
+			        <item>M. Emmet Walsh</item>
+			        <item>Adrienne Barbeau</item>
+			        <item>Ned Beatty</item>
+			        <item>Severn Darden</item>
+					<item>Sam Kinison</item>
+					<item>Robert Picardo</item>
+					<item>Kurt Vonnegut Jr.</item>
+					<item>Edie McClurg</item>
+					<item>Jason Hervey</item>
+			    </string-array>
+				<string name="OldSchool_title">Old School</string>
+				<string name="OldSchool_year">2003</string>
+				<string name="OldSchool_rating">2.5 stars</string>
+				<string name="OldSchool_image">/iv2AotRlDqjdDK247BtbAAPmpDK.jpg</string>
+				<string name="OldSchool_description">Amusing film that never quite takes off.  Leaves most of its laughs to individual moments.</string>
+				<string-array name="OldSchool_array">
+			        <item>Luke Wilson</item>
+			        <item>Will Ferrell</item>
+			        <item>Vince Vaughn</item>
+			        <item>Jeremy Piven</item>
+			        <item>Ellen Pompeo</item>
+			        <item>Juliette Lewis</item>
+			        <item>Leah Remini</item>
+			        <item>Perrey Reeves</item>
+			        <item>Craig Kilborn</item>
+			        <item>Harve Presnell</item>
+			        <item>Snoop Dogg</item>
+					<item>Elisha Cuthbert</item>
+					<item>Artie Lange</item>
+					<item>Robert (Rob) Corddry</item>
+			    </string-array>
+				<string name="TheSandlot_title">The Sandlot</string>
+				<string name="TheSandlot_year">1993</string>
+				<string name="TheSandlot_rating">2.5 stars</string>
+				<string name="TheSandlot_image">/vw370lxDNwp984BAFdo3UXlKsX5.jpg</string>
+				<string name="TheSandlot_description">Innocuous film; incredibly condescending, heavy handed narration.</string>
+				<string-array name="TheSandlot_array">
+			        <item>Tom Guiry</item>
+			        <item>Mike Vitar</item>
+			        <item>Patrick Renna</item>
+			        <item>Chauncey Leopardi</item>
+			        <item>Marty York</item>
+			        <item>Brandon Adams</item>
+			        <item>Denis Leary</item>
+			        <item>Karen Allen</item>
+			        <item>James Earl Jones</item>
+			        <item>Maury Willis</item>
+			        <item>Art La Fleur</item>
+			    </string-array> 
+				<string name="Goodfellas_title">Goodfellas</string>
+				<string name="Goodfellas_year">1990</string>
+				<string name="Goodfellas_rating">3.5</string>
+				<string name="Goodfellas_image">/9NMhcZxqAfCr7gbJ48M5hQEvaR3.jpg</string>
+				<string name="Goodfellas_description">The violence is (necessarily) harsh and off-putting; exceptional cast</string>
+				<string-array name="Goodfellas_array">
+			        <item>Robert De Niro</item>
+			        <item>Ray Liotta</item>
+			        <item>Joe Pesci</item>
+			        <item>Lorraine Bracco</item>
+			        <item>Paul Sorvino</item>
+			        <item>Frank Sivero</item>
+			        <item>Tony Darrow</item>
+			        <item>Mike Starr</item>
+			        <item>Frank Vincent</item>
+			        <item>Chuck Low</item>
+			        <item>Frank DiLeo </item>
+			        <item>Christopher Serrone</item>
+			        <item>Samuel L. Jackson</item>
+			        <item>Henny Youngman</item>
+			        <item>Jerry Vale</item>
+			        <item>Debi Mazar</item>
+			        <item>Kevin Corrigan</item>
+			        <item>Michael Imperioli</item>
+			        <item>Illeana Douglas</item>
+			    </string-array>
+				<string name="AChristmasStory_title">A Christmas Story</string>
+				<string name="AChristmasStory_year">1983</string>
+				<string name="AChristmasStory_description">Wondeful period flavor; Delightful memoir</string>
+				<string name="AChristmasStory_rating">4 stars</string>
+				<string name="AChristmasStory_image">/odu37xDqMcSefv4zgjL3dB9XgEV.jpg</string>
+				<string-array name="AChristmasStory_array">
+			        <item>Peter Billingsley</item>
+			        <item>Darren McGavin</item>
+			        <item>Melinda Dillon</item>
+			       	<item>Ian Petrella</item>
+			        <item>Scott Schwartz</item>
+			        <item>Tedde Moore</item>
+			    </string-array>
+				<string name="TheShawshankRedemption_title">The Shawshank Redemption</string>
+				<string name="TheShawshankRedemption_year">1994</string>
+				<string name="TheShawshankRedemption_description">Oscar worthy performances</string>
+				<string name="TheShawshankRedemption_rating">2.5 stars</string>
+				<string name="TheShawshankRedemption_image">/soVvDmBWg2jxFdMjXsLWBZqr4H5.jpg</string>
+				<string-array name="TheShawshankRedemption_array">
+			        <item>Tim Robbins</item>
+			        <item>Morgan Freeman</item>
+			        <item>Bob Gunton</item>
+			        <item>William Sadler</item>
+			        <item>Clancy Brown</item>
+			        <item>Gil Bellows</item>
+			        <item>James Whitemore</item>
+			        <item>Mark Rolston</item>
+			        <item>Jeffrey Demunn </item>
+			        <item>Paul McCrane</item>
+			    </string-array>
+				<string name="BlackHawkDown_title">Black Hawk Down</string>
+				<string name="BlackHawkDown_year">2001</string>
+				<string name="BlackHawkDown_description">Harrowing; Not for the faint of heart</string>
+				<string name="BlackHawkDown_rating">3 stars</string>
+				<string name="BlackHawkDown_image">/p9gqnAe5x3UqX1chpaEfEl3pPiY.jpg</string>
+				<string-array name="BlackHawkDown_array">
+			        <item>Josh Hartnett</item>
+			        <item>Ewan McGregor</item>
+			        <item>Tom Sizemore</item>
+			        <item>Eric Bana</item>
+			        <item>William Fichtner</item>
+			        <item>Ewen Bremmer</item>
+			        <item>Same Shepard</item>
+			        <item>Gabriel Casseus</item>
+			        <item>Kim Coates</item>
+			        <item>Ron Eldard</item>
+			        <item>Thomas Guiry</item>
+			        <item>Danny Hoch</item>
+			        <item>Zeljko Ivanek</item>
+			        <item>Jeremy Piven</item>
+			        <item>Orlando Bloom</item>
+			    </string-array>
+				<string name="Drumline_title">Drumline</string>
+				<string name="Drumline_year">2002</string>
+				<string name="Drumline_description">Feel-good film covers fresh territory in a strictly formulaic way</string>
+				<string name="Drumline_rating">2.5 stars</string>
+				<string name="Drumline_image">/a3ch64hlK5UZQQyM2GykTTjoxP1.jpg</string>
+				<string-array name="Drumline_array">
+			        <item>Nick Cannon</item>
+			        <item>Zoe Saldana</item>
+			        <item>Leonard Roberts</item>
+			        <item>GQ</item>
+			        <item>Jason Weaver</item>
+			        <item>Earl C. Pitier</item>
+			        <item>Candace Carey</item>
+			        <item>J. Anthony Brown</item>
+			    </string-array>
+				<string name="Elizabethtown_title">Elizabethtown</string>
+				<string name="Elizabethtown_year">2005</string>
+				<string name="Elizabethtown_image">/3iwNfRoESEM2aI5wXkNSeDeiWCW.jpg</string>
+				<string name="Elizabethtown_description">Pleasant but aimless comedy; Seems to go on forever</string>
+				<string name="Elizabethtown_rating">2 stars</string>
+				<string-array name="Elizabethtown_array">
+				    <item>Orlando Bloom</item>
+			        <item>Kirsten Dunst</item>
+			        <item>Susan Sarandon</item>
+			        <item>Alec Baldwin</item>
+			        <item>Bruce McGill</item>
+			        <item>Judy Greer</item>
+			        <item>Jessica Biel</item>
+			        <item>Paul Schneider</item>
+			        <item>Loudon Wainwright III </item>
+			        <item>Gailard Sartain</item>
+			    </string-array>
+				<string name="TheLionKing_title">The Lion King</string>
+				<string name="TheLionKing_year">1994</string>
+				<string name="TheLionKing_description">Dazzling scenics; Some Drama not suited for your viewers</string>
+				<string name="TheLionKing_rating">3 stars</string>
+				<string name="TheLionKing_image">/6lL49SOgBtqiXMs7Y5HWBYH3X9Z.jpg</string>
+				<string-array name="TheLionKing_array">
+			        <item>Jonathan Taylor Thomas</item>
+			        <item>Matthew Broderick</item>
+			        <item>James Earl Jones</item>
+			        <item>Jeremy Irons</item>
+			        <item>Moira Kelly</item>
+			        <item>Niketa Calame</item>
+			        <item>Ernie Sabella</item>
+			        <item>Nathan Lane</item>
+			        <item>Robert Guillaume</item>
+			        <item>Rowan Atkinson</item>
+			        <item>Madge Sinclair</item>
+			        <item>Whoopi Goldberg</item>
+			        <item>Cheech Marin</item>
+			        <item>Jim Cummings</item>
+			    </string-array>
+				<string name="Ratatouille_title">Ratatouille</string>
+				<string name="Ratatouille_year">2007</string>
+				<string name="Ratatouille_description">Feast for the eyes; Fine voice work</string>
+				<string name="Ratatouille_rating">3.5 stars</string>
+				<string name="Ratatouille_image">/bzbZ4cggqWZY0zpUYvwGW9fumB3.jpg</string>
+				<string-array name="Ratatouille_array">
+			        <item>Patton Oswalt</item>
+			        <item>Ian Holm</item>
+			        <item>Lou Romano</item>
+			        <item>Brian Dennehy</item>
+			        <item>Peter Sohn</item>
+			        <item>"Peter O'Toole"</item>
+			        <item>Brad Garrett</item>
+			        <item>Janeane Garofalo</item>
+			        <item>Will Arnett</item>
+			        <item>James Remar</item>
+			        <item>John Ratzenberger</item>
+			        <item>Brad Bird</item>
+			    </string-array>
+				<string name="ToyStory_title">Toy Story</string>
+				<string name="ToyStory_year">1995</string>
+				<string name="ToyStory_description">"Colorful cast of characters; A grownup story masqueradingas a kid's film"</string>
+				<string name="ToyStory_rating">3 stars</string>
+				<string name="ToyStory_image">/kAQgC2xSqXAwKjj7ktTLPgYDGjp.jpg</string>
+				<string-array name="ToyStory_array">
+			        <item>Tom Hanks</item>
+			        <item>Tim Allen</item>
+			        <item>Don Rickles</item>
+			        <item>Jim Varney</item>
+			        <item>Wallace Shawn</item>
+			        <item>John Ratzenberger</item>
+			        <item>Annie Potts</item>
+			        <item>John Morris</item>
+			        <item>Erik Von Detten</item>
+			        <item>Laurie Metcall</item>
+			        <item>R. Lee Ermey</item>
+			    </string-array>
+				<string name="Se7en_title">"Se7en"</string>
+				<string name="Se7en_year">1995</string>
+				<string name="Se7en_description">Intelligently written; unsettling at times;</string>
+				<string name="Se7en_rating">3 stars</string>
+				<string name="Se7en_image">/y9LxwLkIYows2NcIU4oAAk3Xfgt.jpg</string>
+				<string-array name="Se7en_array">
+			        <item>Brad Pitt</item>
+			        <item>Morgan Freeman</item>
+			        <item>Kevin Spacey</item>
+			        <item>Gwyneth Paltrow</item>
+			        <item>Richard Roundtree</item>
+			        <item>R. Lee Ermey</item>
+			        <item>John C. McGinley</item>
+			        <item>Julie Araskog</item>
+			        <item>Mark Boone Junior</item>
+			        <item>John Cassani</item>
+			        <item>Reginald E. Cathey</item>
+			        <item>Peter Crombie</item>
+			        <item>Hawthorne James</item>
+			        <item>Michael Massee</item>
+			        <item>Leland Orser</item>
+			        <item>Richard Portnow</item>
+			    </string-array>
+				<string name="TheCuriousCaseofBenjaminButton_title">The Curious Case of Benjamin Button</string>
+				<string name="TheCuriousCaseofBenjaminButton_year">2008</string>
+				<string name="TheCuriousCaseofBenjaminButton_description">Exceptional, epic story telling;</string>
+				<string name="TheCuriousCaseofBenjaminButton_rating">4 stars</string>
+				<string name="TheCuriousCaseofBenjaminButton_image">/u4izHlsHk8jwalt5m7E2uzP8q9E.jpg</string>
+				<string-array name="TheCuriousCaseofBenjaminButton_array">
+				    <item>Brad Pitt</item>
+			        <item>Cate Blanchett</item>
+			        <item>Taraji P. Henson</item>
+			        <item>Julia Ormond</item>
+			        <item>Tilda Swinton</item>
+			        <item>Jason Flemyng</item>
+			        <item>Mahershalalhashbaz Ali</item>
+			        <item>Jared Harris</item>
+			        <item>Elias Koteas</item>
+			        <item>Phyllis Somerville</item>
+			        <item>Rampai Mohadi</item>
+			        <item>Elle Fanning</item>
+			    </string-array>
+				<string name="OceansEleven_title">"Ocean's Eleven"</string>
+				<string name="OceansEleven_year">2001</string>
+				<string name="OceansEleven_description">Remarkably lifeless caper film;</string>
+				<string name="OceansEleven_rating">2 stars</string>
+				<string name="OceansEleven_image">/wrI5n29GgneQvgFOd79V1FxTBHb.jpg</string>
+				<string-array name="OceansEleven_array">
+			        <item>George Clooney</item>
+			        <item>Matt Damon</item>
+			        <item>Andy Garcia</item>
+			        <item>Brad Pitt</item>
+			        <item>Julia Roberts</item>
+			        <item>Casey Affleck</item>
+			        <item>Scott Cain</item>
+			        <item>Elliot Gould</item>
+			        <item>Eddie Jemison</item>
+			        <item>Bernie Mac</item>
+			        <item>Shaobo Qin</item>
+			        <item>Carl Reiner</item>
+			    </string-array>
+				<string name="PanicRoom_title">Panic Room</string>
+				<string name="PanicRoom_year">2002</string>
+				<string name="PanicRoom_description">Suspenseful; Dissapointingly conventional, violenet finale</string>
+				<string name="PanicRoom_rating">3 stars</string>
+				<string name="PanicRoom_image">/oZhi6I8Yoz5uHzRjf30tB2zWsLw.jpg</string>
+				<string-array name="PanicRoom_array">
+			        <item>Jodie Foster</item>
+			        <item>Forest Whitaker</item>
+			        <item>Jared Leto</item>
+			        <item>Dwight Yoakam</item>
+			        <item>Kristen Stewart</item>     
+			        <item>Ann Magnuson</item>
+			        <item>Ian Buchanan</item>
+			        <item>Patrick Bauchau</item>
+			    </string-array>
+				<string name="PansLabyrinth_title">"Pan's Labyrinth"</string>
+				<string name="PansLabyrinth_year">2006</string>
+				<string name="PansLabyrinth_description">Blends fantasy and fearsome vilence; Invites repeated viewings</string>
+				<string name="PansLabyrinth_rating">3.5 stars</string>
+				<string name="PansLabyrinth_image">/wEzXvrJfHKqHPJv52irLjCyNc5V.jpg</string>
+				<string-array name="PansLabyrinth_array">
+			        <item>Sergi López</item>
+			        <item>Maribel Verdú</item>
+			        <item>Ivana Baquero</item>
+			        <item>Álex Angulo</item>
+			        <item>Doug Jones</item>
+			        <item>Ariadna Gil</item>
+			        <item>Roger Casamajor</item>
+			    </string-array>
+				<string name="Psycho_title">Psycho</string>
+				<string name="Psycho_year">1960</string>
+				<string name="Psycho_description">The score adds much to the excitement</string>
+				<string name="Psycho_rating">4 stars</string>
+				<string name="Psycho_image">/ziKfposTLSXD8SFYHBEx5Pq7zO3.jpg</string>
+				<string-array name="Psycho_array">
+			        <item>Anthony Perkins</item>
+			        <item>Janet Leigh</item>
+			        <item>Vera Miles</item>
+			        <item>John Gavin</item>
+			        <item>Martin Balsam</item>
+			        <item>John McIntire</item>
+			        <item>Lurene Tuttle</item>
+			        <item>Simon Oakland</item>
+			        <item>John Anderson</item>
+			        <item>Mort Millis</item>
+			        <item>Frank Albertson</item>
+			        <item>Patricia Hitchcock</item>
+			    </string-array>
+				<string name="Poltergeist_title">Poltergeist</string>
+				<string name="Poltergeist_year">1982</string>
+				<string name="Poltergeist_description">Paced like a roller-coaster ride, with dazzling special effects; Sensationally scary.</string>
+				<string name="Poltergeist_rating">3.5 stars</string>
+				<string name="Poltergeist_image">/6kazrydTbHlqKzE5h2xUejDgIec.jpg</string>
+				<string-array name="Poltergeist_array">
+			        <item>Craig T. Nelson</item>
+			        <item>JoBeth Williams</item>
+			        <item>Beatrice Straight</item>
+			        <item>Dominique Dunne</item>
+			        <item>Oliver Robins</item>
+			        <item>"Heather O'Rourke"</item>
+			        <item>Zelda Rubinstein</item>
+			        <item>Richard Lawson</item>
+			        <item>James Karen</item>
+			    </string-array>
+				<string name="PhoneBooth_title">Phone Booth</string>
+				<string name="PhoneBooth_year">2002</string>
+				<string name="PhoneBooth_image">/5TTplMphJAOOvOnkx3dJM8NJ3lu.jpg</string>
+				<string name="PhoneBooth_description">Makes no sense whatsoever; Annoying film; The lead gives a tour-de-force performance.</string>
+				<string name="PhoneBooth_rating">1.5 stars</string>
+				<string-array name="PhoneBooth_array">
+			        <item>Colin Farrell</item>
+			        <item>Kiefer Sutherland</item>
+			        <item>Forest Whitaker</item>
+			        <item>Radha Mitchell</item>
+			        <item>Katie Holmes</item>
+			        <item>Richard T. Jones</item>
+			        <item>Keith Nobbs</item>
+			        <item>Josh Pais</item>
+			        <item>Tia Texada</item>
+			        <item>Paula Jai Parker</item>
+			    </string-array>
+				<string name="TheLakeHouse_title">The Lake House</string>
+				<string name="TheLakeHouse_year">2006</string>
+				<string name="TheLakeHouse_description">"Creates a moodiness that's intriguing enough to allow a willing viewer to go along for the ride"</string>
+				<string name="TheLakeHouse_rating">2.5 stars</string>
+				<string name="TheLakeHouse_image">/eV5qwxjNsNQuY7XITizuXNhVDys.jpg</string>
+				<string-array name="TheLakeHouse_array">
+			        <item>Keanu Reeves</item>
+			        <item>Sandra Bullock</item>
+			        <item>Dylan Walsh</item>
+			        <item>Shohreh Aghdashloo</item>
+			        <item>Christopher Plummer</item>
+			        <item>Ebon Moss-Bachrach</item>
+			        <item>Willeke van Ammelrooy</item>	        
+			        <item>Lynn Collins</item>
+			    </string-array>
+				<string name="TheTimeTravelersWife_title">The Time Travelers Wife</string>
+				<string name="TheTimeTravelersWife_year">2009</string>
+				<string name="TheTimeTravelersWife_description">The concept is difficult to embrace; Maintains an extremely delicate and light tone throughout.</string>
+				<string name="TheTimeTravelersWife_rating">2 stars</string>
+				<string name="TheTimeTravelersWife_image">/2Po4fvS46AAshzDZGDdjkrVxPo8.jpg</string>
+				<string-array name="TheTimeTravelersWife_array">
+			        <item>Rachel McAdams</item>
+			        <item>Eric Bana</item>
+			        <item>Ron Livingston</item>
+			        <item>Arliss Howard</item>
+			        <item>Jane McLean</item>
+			        <item>Stephen Tobolowsky</item>
+			    </string-array>
+				<string name="KateandLeopold_title">Kate &amp; Leopold</string>
+				<string name="KateandLeopold_year">2001</string>
+				<string name="KateandLeopold_description">Cute, funny romantic comedy; goes on to long given the finale is a forgone conclusion;The leading man is charming</string>
+				<string name="KateandLeopold_rating">2.5 stars</string>
+				<string name="KateandLeopold_image">/8Gvk5M0cD8XjsXhJhZxmyOEXUja.jpg</string>
+				<string-array name="KateandLeopold_array">
+			        <item>Meg Ryan</item>
+			        <item>Hugh Jackman</item>
+			        <item>Liev Schreiber</item>
+			        <item>Breckin Meyer</item>
+			        <item>Natasha Lyonne</item>
+			        <item>Bradley Whitford</item>
+			        <item>Paxton Whitehead</item>
+			        <item>Spalding Gray</item>
+			        <item>Philip Bosco</item>
+			    </string-array>
+				<string name="TheDayAfterTomorrow_title">The Day After Tomorrow</string>
+				<string name="TheDayAfterTomorrow_year">2004</string>
+				<string name="TheDayAfterTomorrow_description">"The characters are likeable, the dialogue isn't dumb, and the effects are spectacular"</string>
+				<string name="TheDayAfterTomorrow_rating">3 stars</string>
+				<string name="TheDayAfterTomorrow_image">/rJXY9V53m90h7ZpHTGHknBCIH6O.jpg</string>
+				<string-array name="TheDayAfterTomorrow_array">
+			        <item>Dennis Quaid</item>
+			        <item>Jake Gyllenhaal</item>
+			        <item>Ian Holm</item>
+			        <item>Emmy Rossum</item>
+			        <item>Sela Ward</item>
+			        <item>Dash Mihok</item>
+			        <item>Kenneth Welsh</item>
+			        <item>Jay O. Sanders</item>
+			        <item>Austin Nichols</item>
+			        <item>Perry King</item>
+			    </string-array>
+				<string name="NationalLampoonsChristmasVacation_title">"National Lampoon's Christmas Vacation"</string>
+				<string name="NationalLampoonsChristmasVacation_year">1989</string>
+				<string name="NationalLampoonsChristmasVacation_description">Funny(if typically spotty, sometimes tasteless)saga</string>
+				<string name="NationalLampoonsChristmasVacation_rating">3 stars</string>
+				<string name="NationalLampoonsChristmasVacation_image">/rmiSL0HD7ohoKn2NCW5HSZ4bWp8.jpg</string>
+				<string-array name="NationalLampoonsChristmasVacation_array">
+			        <item>Chevy Chase</item>
+			        <item>"Beverly D'Angelo"</item>
+			        <item>Randy Quaid</item>
+			        <item>Diane Ladd</item>
+			        <item>John Randolph</item>
+			        <item>E.G. Marshall</item>
+			        <item>Doris Roberts</item>
+			        <item>Julia Louis-Dreyfus</item>
+			        <item>Mae Questel</item>
+			        <item>William Hickey</item>
+			        <item>Brian Doyle-Murray</item>
+			        <item>Juliette Lewis</item>
+			        <item>Johnny Galecki</item>
+			        <item>Nicholas Guest</item>
+			        <item>Miriam Flynn</item>
+			    </string-array>
+				<string name="TheParentTrap_title">The Parent Trap</string>
+				<string name="TheParentTrap_year">1998</string>
+				<string name="TheParentTrap_description">"Delightful remake that doesn't lose the appeal of the original"</string>
+				<string name="TheParentTrap_rating">3 stars</string>
+				<string name="TheParentTrap_image">/edoD5Yt1jCeUqfxJmW2Yi1lwpvc.jpg</string>
+				<string-array name="TheParentTrap_array">
+			        <item>Lindsay Lohan</item>
+			        <item>Dennis Quaid</item>
+			        <item>Natasha Richardson</item>
+			        <item>Elaine Hendrix</item>
+			        <item>Lisa Ann Walter</item>
+			        <item>Simon Kunz</item>
+			        <item>Polly Holliday</item>
+			        <item>Maggie Wheeler</item>
+			        <item>Ronnie Stevens</item>
+			    </string-array>
+				<string name="BigMommasHouse_title">"Big Momma's House"</string>
+				<string name="BigMommasHouse_year">2000</string>
+				<string name="BigMommasHouse_description">Broad comedy is enthusuastically performed but thin as tissue paper</string>
+				<string name="BigMommasHouse_rating">2 stars</string>
+				<string name="BigMommasHouse_image">/21I8gtgIT61YA2wt1zZR87uJZn2.jpg</string>
+				<string-array name="BigMommasHouse_array">
+			        <item>Martin Lawrence</item>
+			        <item>Nia Long</item>
+			        <item>Paul Giamatti</item>
+			        <item>Terrence Howard</item>
+			        <item>Ella Mitchell</item>
+			        <item>Jascha Washington</item>   
+			        <item>Anthony Anderson</item>
+			    </string-array>
+				<string name="TheHouseBunny_title">The House Bunny</string>
+				<string name="TheHouseBunny_year">2008</string>
+				<string name="TheHouseBunny_description">Silly and predictable;The lead character is ditzy but endearing</string>
+				<string name="TheHouseBunny_rating">2.5 stars</string>
+				<string name="TheHouseBunny_image">/cM9sLtGuQB5LeiaqHnoS6XdUy6p.jpg</string>
+				<string-array name="TheHouseBunny_array">
+			        <item>Anna Faris</item>
+			        <item>Colin Hanks</item>
+			        <item>Emma Stone</item>
+			        <item>Kat Dennings</item>
+			        <item>Katharine McPhee</item>
+			        <item>Rumer Willis</item>
+			        <item>Monet Mazur</item>
+			        <item>Kiely Williams</item>
+			        <item>Tyson Ritter</item>
+			        <item>"Beverly D'Angelo"</item>
+			        <item>Christopher McDonald</item>
+			        <item>Nick Swardson</item>
+			        <item>Hugh M. Hefner</item>
+			    </string-array>
+				<string name="AnimalHouse_title">Animal House</string>
+				<string name="AnimalHouse_year">1978</string>
+				<string name="AnimalHouse_description">It became a hit and spawned a number of truly terrible imitations</string>
+				<string name="AnimalHouse_rating">2 stars</string>
+				<string name="AnimalHouse_image">/jVcIDayghdYCMQJ1mziHTWYs0r4.jpg</string>
+				<string-array name="AnimalHouse_array">
+				    <item>John Belushi</item>
+				    <item>Tim Matheson</item>
+				    <item>John Vernon</item>
+				    <item>Verna Bloom</item>
+			        <item>Tom Hulce</item>
+			        <item>Cesare Denova</item>
+			        <item>Peter Riegert</item>
+			        <item>Stephen Furst</item>
+			        <item>Donald Sutherland</item>
+			        <item>Karen Allen</item>
+			        <item>Sarah Holcomb</item>
+			        <item>Bruce McGill</item>
+			        <item>Martha Smith</item>
+			        <item>Mary Louise Weller</item>
+			        <item>James Daughton</item>
+			        <item>Kevin Bacon</item>
+			        <item>Mark Metcalf</item>
+			        <item>James Widdoes</item>
+			    </string-array>
+				<string name="RoadHouse_title">Road House</string>
+				<string name="RoadHouse_year">1989</string>
+				<string name="RoadHouse_description">Brain dead yahoo fare is fun for a while</string>
+				<string name="RoadHouse_rating">1.5 stars</string>
+				<string name="RoadHouse_image">/2tQ4Hf7LJMHvqZrJCEDmAY9LoBX.jpg</string>
+				<string-array name="RoadHouse_array">
+			        <item>Patrick Swayze</item>
+			        <item>Kelly Lynch</item>
+			        <item>Sam Elliott</item>
+			        <item>Ben Gazzara</item>
+			        <item>Marshall R. Teague</item>
+			        <item>Kevin Tighe</item>
+			        <item>Kathleen Wilhoite</item>
+			        <item>The Jeff Healey Band</item> 
+			    </string-array>
+				<string name="TwoThousandTwelve_title">2012</string>
+				<string name="TwoThousandTwelve_year">2009</string>
+				<string name="TwoThousandTwelve_image">/3lQsV67IdRs5F1rMWpPUWIRVANm.jpg</string>
+				<string name="TwoThousandTwelve_description">The pace too often plodding, the performances wildly uneven, and the script crammed with laughable cliches</string>
+				<string name="TwoThousandTwelve_rating">2 stars</string>
+				<string-array name="TwoThousandTwelve_array">
+			        <item>John Cusack</item>
+			        <item>Chiwetel Ejiofor</item>
+			        <item>Amanda Peet</item>
+			        <item>Oliver Platt</item>
+			        <item>Thandie Newton</item>
+			        <item>Danny Glover</item>
+			        <item>Woody Harrelson</item>
+			        <item>Tom McCarthy</item>
+			        <item>George Segal</item>
+			        <item>Stephan McHattie</item>
+			        <item>Patrick Bauchau</item>
+			        <item>Beatrice Rosen</item>
+			        <item>Johann Urb</item>
+			    </string-array>
+				<string name="ASpaceOdyssey_title">"2001: A Space Odyssey"</string>
+				<string name="ASpaceOdyssey_year">1968</string>
+				<string name="ASpaceOdyssey_description">A unie masterpiece, immensely influential;</string>
+				<string name="ASpaceOdyssey_rating">4 stars</string>
+				<string name="ASpaceOdyssey_image">/pckdZ29bHj11hBsV3SbVVfmCB6C.jpg</string>
+				<string-array name="ASpaceOdyssey_array">
+			        <item>Keir Dullea</item>
+			        <item>William Sylvester</item>
+			        <item>Gary Lockwood</item>
+			        <item>Daniel Richter</item>
+			    </string-array>
+				<string name="EscapeFromNewYork_title">Escape From New York</string>
+				<string name="EscapeFromNewYork_year">1981</string>
+				<string name="EscapeFromNewYork_description">"For a 'fun' film this is pretty bleak;"</string>
+				<string name="EscapeFromNewYork_rating">2 stars</string>
+				<string name="EscapeFromNewYork_image">/iSi3OJKSPNknaxSvjpOa6c38Xgn.jpg</string>
+				<string-array name="EscapeFromNewYork_array">
+			        <item>Kurt Russell</item>
+			        <item>Lee Van Cleef</item>
+			        <item>Ernest Borgnine</item>
+			        <item>Donald Pleasence</item>
+			        <item>Isaac Hayes</item>
+			        <item>Adrienne Barbeau</item>
+			        <item>Harry Dean Stanton</item>
+			        <item>Season Hubley</item>
+			    </string-array>
+				<string name="AClockworkOrange_title">A Clockwork Orange</string>
+				<string name="AClockworkOrange_year">1971</string>
+				<string name="AClockworkOrange_description">A scathing satire on a society in the not so distant future; The movie was too string for some to stomach in 1971</string>
+				<string name="AClockworkOrange_rating">3.5 stars</string>
+				<string name="AClockworkOrange_image">/unMc1jEyqCnzba976GviSFKGagt.jpg</string>
+				<string-array name="AClockworkOrange_array">
+			        <item>Malcolm McDowell</item>
+			        <item>Patrick Magee</item>
+			        <item>Michael Bates</item>
+			        <item>Adrienne Corri</item>
+			        <item>Aubrey Morris</item>
+			        <item>James Marcus</item>
+			        <item>Steven Berkoff</item>
+			        <item>David Prowse</item>			        
+			    </string-array>
+				<string name="RockofAges_title">Rock of Ages</string>
+				<string name="RockofAges_year">2012</string>
+				<string name="RockofAges_description">The love story is bland and weighs down the movie; The movie is just a collection of caricatures and cliches</string>
+				<string name="RockofAges_rating">2 stars</string>
+				<string name="RockofAges_image">/rACRvFCeWzmjHJIETgBj4MiGG8m.jpg</string>
+				<string-array name="RockofAges_array">
+			        <item>Julianne Hough</item>
+			        <item>Diego Boneta</item>
+			        <item>Tom Cruise</item>
+			        <item>Alec Baldwin</item>
+			        <item>Paul Giamatti</item>
+			        <item>Russell Brand</item>
+			        <item>Catherine Zeta-Jones</item>
+			        <item>Mary J. Blige</item>
+			        <item>Malin Akerman</item>
+			        <item>Bryan Cranston</item>
+			        <item>Celina Beach</item>
+			        <item>Will Forte</item>
+			        <item>Debbie Gibson</item>
+			        <item>Kevin Nash</item>
+			        <item>T.J. Miller</item>		        
+			    </string-array>
+				<string name="TheLastSamurai_title">The Last Samurai</string>
+				<string name="TheLastSamurai_year">2003</string>
+				<string name="TheLastSamurai_description">This film flirts with greatness but falls short; Still, there is much to admire, including strong performances</string>
+				<string name="TheLastSamurai_rating">3 stars</string>
+				<string name="TheLastSamurai_image">/nO0GtGFQmEuuOyAQVpHjJlWBU8O.jpg</string>
+				<string-array name="TheLastSamurai_array">
+			        <item>Tom Cruise</item>
+			        <item>Ken Watanabe</item>
+			        <item>Tony Goldwyn</item>
+			        <item>Timothy Spall</item>
+			        <item>Billy Connolly</item>
+			        <item>Hiroyuki Sanada</item>
+			        <item>Masato Harada</item>
+			        <item>Koyuki</item>
+			        <item>Scott Wilson</item>
+			        <item>William Atherton</item>
+			    </string-array>
+				<string name="Magnolia_title">Magnolia</string>
+				<string name="Magnolia_year">1999</string>
+				<string name="Magnolia_description">A mosaic of misery; Fine performances in this emotionally exausting film</string>
+				<string name="Magnolia_rating">3 stars</string>
+				<string name="Magnolia_image">/9In3XGQSdr2yfgUoEdCpqxEGAOO.jpg</string>
+				<string-array name="Magnolia_array">
+				    <item>Tom Cruise</item>
+			        <item>Julianne Moore</item>
+			        <item>John C. Reilly</item>
+			        <item>Jason Robards</item>
+			        <item>Philip Seymour Hoffman</item>
+			        <item>Melora Walters</item>
+			        <item>William H. Macy</item>
+			        <item>Philip Baker Hall</item>
+			        <item>Jeremy Blackman</item>
+			        <item>Michael Bowen</item>
+			        <item>Melinda Dillon</item>
+			        <item>Alfred Molina</item>
+			        <item>Michael Murphy</item>
+			        <item>Henry Gibson</item>
+			        <item>Felicity Huffman</item>
+			        <item>Eileen Ryan</item>			        
+			    </string-array>
+				<string name="ScaryMovie_title">Scary Movie</string>
+				<string name="ScaryMovie_year">2000</string>
+				<string name="ScaryMovie_description">L-o-o-o-o-o-w brow spoof; Raunchy and raucous, with gags that would embarrass a fret boy.</string>
+				<string name="ScaryMovie_rating">2.5 stars</string>
+				<string name="ScaryMovie_image">/s7dcAllZEVSrVIVMUVAUmwAxFmn.jpg</string>
+				<string-array name="ScaryMovie_array">
+				    <item>Jon Abrahams</item>
+			        <item>Carmen Electra</item>
+			        <item>Shannon Elizabeth</item>
+			        <item>Anna Faris</item>
+			        <item>Kurt Fuller</item>
+			        <item>Regina Hall</item>
+			        <item>Lochlyn Munro</item>
+			        <item>Cheri Oteri</item>
+			        <item>Dave Sheridan</item>
+			        <item>Marlon Wayans</item>
+			        <item>Shawn Wayans</item>
+			        <item>Rick Ducommun</item>
+			        <item>David L. Lander</item>
+			    </string-array>
+				<string name="ImGonnaGitYouSucka_title">I\&apos;m Gonna Git You Sucka</string>
+				<string name="ImGonnaGitYouSucka_year">1988</string>
+				<string name="ImGonnaGitYouSucka_description">Hip spoof film; Lose and good natured, with some laugh-out-loud gags; </string>
+				<string name="ImGonnaGitYouSucka_rating">3 stars</string>
+				<string name="ImGonnaGitYouSucka_image">/hUCvrk0z7mYZTaoP1wL9sLgOsuo.jpg</string>
+				<string-array name="ImGonnaGitYouSucka_array">
+			        <item>Keenen Ivory Wayans</item>
+			        <item>Bernie Casey</item>
+			        <item>Antonio Fargas</item>
+			        <item>Steve James</item>
+			        <item>Isaac Hayes</item>
+			        <item>Jim Brown</item>
+			        <item>"Ja'net DuBois"</item>
+			        <item>Dawnn Lewis</item>
+			        <item>John Vernon</item>
+			        <item>Clu Gulager</item>
+			        <item>Kadeem Hardison</item>
+			        <item>Damon Wayans</item>
+			        <item>Jester Hairston</item>
+			        <item>Anne Marie Johnson</item>
+			        <item>Gary Owens</item>
+			        <item>Eve Plumb</item>
+			        <item>Clarence Williams III</item>
+			        <item>David Alan Grier</item>
+			        <item>Kim Wayans</item>
+			        <item>Robin Harris</item>
+			        <item>Chris Rock</item>
+			    </string-array>
+				<string name="AbovetheRim_title">Above the Rim</string>
+				<string name="AbovetheRim_year">1994</string>
+				<string name="AbovetheRim_description">By-the-numbers tale; Despite insightful moments, film wallows in cliches and plot contrivances</string>
+				<string name="AbovetheRim_rating">2.5 stars</string>
+				<string name="AbovetheRim_image">/omc3XGvgUYwh8Ktsw6EcGfnw1dI.jpg</string>
+				<string-array name="AbovetheRim_array">
+			        <item>Duane Martin</item>
+			        <item>Leon</item>
+			        <item>Tupac Shakur</item>
+			        <item>David Bailey</item>
+			        <item>Tonya Pinkins</item>
+			        <item>Marlon Wayans</item>
+			        <item>Bernie Mac</item>
+			    </string-array>
+				<string name="GroundhogDay_title">Groundhog Day</string>
+				<string name="GroundhogDay_year">1993</string>
+				<string name="GroundhogDay_description">This movie improves on each viewing, with endless twists and turns that are funny, moving, and even profound</string>
+				<string name="GroundhogDay_rating">3 stars</string>
+				<string name="GroundhogDay_image">/scSE92kPEXxY7SC0kU26Cp8SeBq.jpg</string>
+				<string-array name="GroundhogDay_array">
+			        <item>Bill Murray</item>
+			        <item>Andie MacDowell</item>
+			        <item>Chris Elliott</item>
+			        <item>Stephen Tobolowsky</item>
+			        <item>Brian Doyle-Murray</item>
+			        <item>Marita Geraghty</item>
+			        <item>Angela Paton</item>
+			        <item>Rick Ducommun</item>
+			        <item>Rick Overton</item>
+			        <item>Robin Duke</item>
+			    </string-array>
+				<string name="WildWildWest_title">Wild Wild West</string>
+				<string name="WildWildWest_year">1999</string>
+				<string name="WildWildWest_description">Rehash of a 1960s tv series; Overstuffed with visual gimmickry, but dull in every way.</string>
+				<string name="WildWildWest_rating">1.5 stars</string>
+				<string name="WildWildWest_image">/9hxwrXzD2rtoam4lbqnahrcs5uq.jpg</string>
+				<string-array name="WildWildWest_array">
+			        <item>Will Smith</item>
+			        <item>Kevin Kline</item>
+			        <item>Kenneth Branagh</item>
+			        <item>Salma Hayek</item>
+			        <item>Ted Levine</item>
+			        <item>M. Emmet Walsh</item>
+			        <item>Bai Ling</item>
+			        <item>Frederique Van Der Wal</item>
+			        <item>Musetta Vander</item>
+			        <item>Sofia Eng</item>
+			    </string-array>
+				<string name="Ali_title">Ali</string>
+				<string name="Ali_year">2001</string>
+				<string name="Ali_description">Dissapointing; We learn very little about the man; Despite its length, the film is surprisingly sketchy</string>
+				<string name="Ali_rating">2.5 stars</string>
+				<string name="Ali_image">/nGAFhj1F3cdfmGRgYenIyEYhQOq.jpg</string>
+				<string-array name="Ali_array">
+			        <item>Will Smith</item>
+			        <item>Jamie Foxx</item>
+			        <item>Jon Voight</item>
+			        <item>Mario Van Peebles</item>
+			        <item>Ron Silver</item>
+			        <item>Jeffrey Wright</item>
+			        <item>Mykelti Williamson</item>
+			        <item>Jada Pinkett Smith</item>
+			        <item>Nona Gaye</item>
+			        <item>Michael Michele</item>
+			        <item>Joe Morton</item>
+			        <item>Paul Rodriguez</item>
+			        <item>Bruce McGill</item>
+			        <item>"Barry 'Shabaka' Henley"</item>
+			        <item>Giancarlo Esposito</item>
+			        <item>Laurence Mason</item>
+			        <item>LeVar Burton</item>
+			    </string-array>
+				<string name="StarTrekIITheWrathofKhan_title">"Star Trek II: The Wrath of Khan"</string>
+				<string name="StarTrekIITheWrathofKhan_year">1982</string>
+				<string name="StarTrekIITheWrathofKhan_description">A bit hokey and pretentious at times, but a likeable adventure overall, with nice touches of warmth and humor.</string>
+				<string name="StarTrekIITheWrathofKhan_rating">3 stars</string>
+				<string name="StarTrekIITheWrathofKhan_image">/gih4L6m9u1yB3PGwyJxB5wjzbqR.jpg</string>
+				<string-array name="StarTrekIITheWrathofKhan_array">
+			        <item>William Shatner</item>
+			        <item>Leonard Nimoy</item>
+			        <item>DeForest Kelley</item>
+			        <item>Ricardo Montalban</item>
+			        <item>James Doohan</item>
+			        <item>Walter Koenig</item>
+			        <item>George Takei</item>
+			        <item>Nichelle Nichols</item>
+			        <item>Kirstie Alley</item>
+			        <item>Bibi Besch</item>
+			        <item>Merritt Butrick</item>
+			        <item>Paul Winfield</item> 
+			    </string-array>
+				<string name="TheThing_title">The Thing</string>
+				<string name="TheThing_year">1982</string>
+				<string name="TheThing_description">Faithful to the original story but nonstop parade of repulsive special effects turns this into a freak show and drowns the suspense</string>
+				<string name="TheThing_rating">1.5 stars</string>
+				<string name="TheThing_image">/z2yBw1BIUyGl8DgRfkWzbgsanjG.jpg</string>
+				<string-array name="TheThing_array">
+			        <item>Kurt Russell</item>
+			        <item>Wilford Brimley</item>
+			        <item>Richard Dysart</item>
+			        <item>Richard Masur</item>
+			        <item>Donald Moffat</item>
+			        <item>T.K. Carter</item>
+			        <item>David Clennon</item>
+			    </string-array>
+				<string name="SavingPrivateRyan_title">Saving Private Ryan</string>
+				<string name="SavingPrivateRyan_year">1998</string>
+				<string name="SavingPrivateRyan_description">Most realistic, relentlessly harrowing footage ever committed to a fiction film.</string>
+				<string name="SavingPrivateRyan_rating">3.5 stars</string>
+				<string name="SavingPrivateRyan_image">/4y5TDUZlqUmWWtjTAznWb6CFpzt.jpg</string>
+				<string-array name="SavingPrivateRyan_array">
+			        <item>Tom Hanks</item>
+			        <item>Edward Burns</item>
+			        <item>Tom Sizemore</item>
+			        <item>Jeremy Davies</item>
+			        <item>Vin Diesel</item>
+			        <item>Adam Goldberg</item>
+			        <item>Barry Pepper</item>
+			        <item>Giovanni Ribisi</item>
+			        <item>Matt Damon</item>
+			        <item>Dennis Farina</item>
+			        <item>Ted Danson</item>
+			        <item>Harve Presnell</item>
+			        <item>Dale Dye</item>
+			        <item>Bryan Cranston</item>
+			        <item>David Wohl</item>
+			        <item>Paul Giamatti</item>
+			        <item>Ryan Hurst</item>
+			        <item>Harrison Young</item>
+			    </string-array>
+				<string name="GlengarryGlenRoss_title">Glengarry Glen Ross</string>
+				<string name="GlengarryGlenRoss_year">1992</string>
+				<string name="GlengarryGlenRoss_description">"Scorching and profane; Never succeeds in being anything but a photographed play, but when the play and the actors are this good it's hard to complain"</string>
+				<string name="GlengarryGlenRoss_rating">3 stars</string>
+				<string name="GlengarryGlenRoss_image">/wSTGOPf2VYDtO48R5UzZrsdwuuM.jpg</string>
+				<string-array name="GlengarryGlenRoss_array">
+			        <item>Al Pacino</item>
+			        <item>Jack Lemmon</item>
+			        <item>Alec Baldwin</item>
+			        <item>Ed Harris</item>
+			        <item>Alan Arkin</item>
+			        <item>Kevin Spacey</item>
+			        <item>Jonathan Pryce</item>
+			        <item>Bruce Altman</item>
+			        <item>Jude Ciccolella</item>
+			    </string-array>
+				<string name="Heat_title">Heat</string>
+				<string name="Heat_year">1995</string>
+				<string name="Heat_description">A fascinating, multilayered character study studded with gripping action scenes; Overlength is the only criticism of this crackerjack contemporary drama.</string>
+				<string name="Heat_rating">3.5 stars</string>
+				<string name="Heat_image">/l54hlXbLzwJgQkiVh0PHZKHj5Fs.jpg</string>
+				<string-array name="Heat_array">
+			        <item>Al Pacino</item>
+			        <item>Robert De Niro</item>
+			        <item>Val Kilmer</item>
+			        <item>Jon Voight</item>
+			        <item>Tom Sizemore</item>
+			        <item>Diane Venora</item>
+			        <item>Amy Brenneman</item>
+			        <item>Ashley Judd</item>
+			        <item>Mykelti Williamson</item>
+			        <item>Wes Studi</item>
+			        <item>Ted Levine</item>
+			        <item>Dennis Haysbert</item>
+			        <item>William Fichtner</item>
+			        <item>Natalie Portman</item>
+			        <item>Tom Noonan</item>
+			        <item>Kevin Gage</item>
+			        <item>Hank Azaria</item>
+			        <item>Henry Rollins</item>
+			        <item>Tone Loc</item>
+			        <item>Jeremy Piven</item>
+			    </string-array>
+				<string name="Collateral_title">Collateral</string>
+				<string name="Collateral_year">2004</string>
+				<string name="Collateral_image">/1lBcCWYZXQXa42JLY7CelSPEFwV.jpg</string>
+				<string name="Collateral_description">Crisp action thriller; Builds interesting characterications, then tosses credibility down the drain during the climax</string>
+				<string name="Collateral_rating">2.5 stars</string>
+				<string-array name="Collateral_array">
+			        <item>Tom Cruise</item>
+			        <item>Jamie Foxx</item>
+			        <item>Jada Pinkett Smith</item>
+			        <item>Mark Ruffalo</item>
+			        <item>Peter Berg</item>
+			        <item>Bruce McGill</item>
+			        <item>Javier Bardem</item>
+			        <item>Irma P. Hall</item>
+			        <item>Barry Shabaka Henley</item>
+			        <item>Bodhi Elfman</item>
+			        <item>Debi Mazar</item>
+			        <item>Richard T. Jones</item>
+			        <item>Jason Statham</item>
+			    </string-array>
+				<string name="PublicEnemies_title">Public Enemies</string>
+				<string name="PublicEnemies_year">2009</string>
+				<string name="PublicEnemies_image">/if8Mr1HJyS9sEtI8VMa01udmLuM.jpg</string>
+				<string name="PublicEnemies_description">Stylishly made, but also emotionally distant, with stabs at social and cultural meaning</string>
+				<string name="PublicEnemies_rating">2.5 stars</string>
+				<string-array name="PublicEnemies_array">
+			        <item>Johnny Depp</item>
+			        <item>Christian Bale</item>
+			        <item>Marion Cotillard</item>
+			        <item>Jason Clarke</item>
+			        <item>Rory Cochrane</item>
+			        <item>Billy Crudup</item>
+			        <item>Stephen Dorff</item>
+			        <item>Stephen Lang</item>
+			        <item>John Ortiz</item>
+			        <item>Giovanni Ribisi</item>
+			        <item>David Wenham</item>
+			        <item>Peter Gerety</item>
+			        <item>Shawn Hatosy</item>
+			        <item>James Russo</item>
+			        <item>Channing Tatum</item>
+			        <item>Carey Mulligan</item>
+			        <item>Casey Siemaszko</item>
+			        <item>Lili Taylor</item>
+			        <item>LeeLee Sobieski</item>
+			        <item>Emilie de Ravin</item>
+			    </string-array>
+				<string name="WALLE_title">WALL-E</string>
+				<string name="WALLE_year">2008</string>
+				<string name="WALLE_description">An irresistible main character, and a dynamite opening sequence; Becomes heavy-handed in its message</string>
+				<string name="WALLE_rating">2.5 stars</string>
+				<string name="WALLE_image">/bPceVvSRMPCILUOfuss5STD5rsi.jpg</string>
+				<string-array name="WALLE_array">
+			        <item>Ben Burtt</item>
+			        <item>Elissa Knight</item>
+			        <item>Jeff Garlin</item>
+			        <item>John Ratzenberger</item>
+			        <item>Kathy Najimy</item>
+			        <item>Sigourney Weaver</item>
+			    </string-array>
+				<string name="RiseoftheMachines_title">"Terminator 3: Rise of the Machines"</string>
+				<string name="RiseoftheMachines_year">2003</string>
+				<string name="RiseoftheMachines_description">Simply entertains with lots of large scale action and special effects.</string>
+				<string name="RiseoftheMachines_rating">3 stars</string>
+				<string name="RiseoftheMachines_image">/8ZuMyOjFpwq1tNU9MAFN836Wb1b.jpg</string>
+				<string-array name="RiseoftheMachines_array">
+			        <item>Arnold Schwarzenegger</item>
+			        <item>Nick Stahl</item>
+			        <item>Claire Danes</item>
+			        <item>David Andrews</item>
+			        <item>Kristanna Loken</item>
+			        <item>Mark Famiglietti</item>
+			        <item>Christopher Lawford</item>
+			    </string-array>
+				<string name="AustinPowersinGoldmember_title">Austin Powers in Goldmember</string>
+				<string name="AustinPowersinGoldmember_year">2002</string>
+				<string name="AustinPowersinGoldmember_description">Opens with such a hilarious, surprising sequence that nothing can top it - and nothing does. No real story follows; Crude jokes and missed opportunities</string>
+				<string name="AustinPowersinGoldmember_rating">2 stars</string>
+				<string name="AustinPowersinGoldmember_image">/ufmCmeGYCWI2opcxxK9JVAfrAFx.jpg</string>
+				<string-array name="AustinPowersinGoldmember_array">
+			        <item>Mike Myers</item>
+			        <item>Beyoncé Knowles</item>
+			        <item>Michael Caine</item>
+			        <item>Seth Green</item>
+			        <item>Michael York</item>
+			        <item>Robert Wagner</item>
+			        <item>Mindy Sterling</item>
+			        <item>Verne Troyer</item>
+			        <item>Fred Savage</item>
+			    </string-array>
+				<string name="TheMatrix_title">The Matrix</string>
+				<string name="TheMatrix_year">1999</string>
+				<string name="TheMatrix_description">Cutting edge visuals with an overlong script; Has a tendency to keep changing its own complicated rules.</string>
+				<string name="TheMatrix_rating">2.5 stars</string>
+				<string name="TheMatrix_image">/vKMDq5icDLyJI80xamfJ4nwE3RQ.jpg</string>
+				<string-array name="TheMatrix_array">
+			        <item>Keanu Reeves</item>
+			        <item>Laurence Fishburne</item>
+			        <item>Carrie-Anne Moss</item>
+			        <item>Hugo Weaving</item>
+			        <item>Gloria Foster</item>
+			        <item>Joe Pantoliano</item>
+			        <item>Marcus Chong</item>
+			    </string-array>
+				<string name="SuperMarioBrothers_title">Super Mario Bros</string>
+				<string name="SuperMarioBrothers_year">1993</string>
+				<string name="SuperMarioBrothers_description">An overblow, effects-laden turky; This film has far less appeal then the source that inspired it.</string>
+				<string name="SuperMarioBrothers_rating">1.5 stars</string>
+				<string name="SuperMarioBrothers_image">/prtM6joU0bEKJjyb4mWoEZjDkHl.jpg</string>
+				<string-array name="SuperMarioBrothers_array">
+			        <item>Bob Hoskins</item>
+			        <item>John Leguizamo</item>
+			        <item>Dennis Hopper</item>
+			        <item>Samantha Mathis</item>
+			        <item>Fisher Stevens</item>
+			        <item>Richard Edson</item>
+			        <item>Fiona Shaw</item>
+			        <item>Lance Henriksen</item>
+			    </string-array>
+				<string name="Memento_title">Memento</string>
+				<string name="Memento_year">2000</string>
+				<string name="Memento_description">"Pretentious; Plays with storytelling conventions and juggles 'real time', but adds up to zero."</string>
+				<string name="Memento_rating">1.5</string>
+				<string name="Memento_image">/ffEo2u8q82ehiblNSrmijzvnCGN.jpg</string>
+				<string-array name="Memento_array">
+			        <item>Guy Pearce</item>
+			        <item>Carrie-Anne Moss</item>
+			        <item>Joe Pantoliano</item>
+			        <item>Mark Boone Jr</item>
+			        <item>Stephen Tobolowsky</item>
+			        <item>Jorja Fox</item>
+			        <item>Callum Keith Rennie</item>
+			    </string-array>
+				<string name="ThePest_title">The Pest</string>
+				<string name="ThePest_year">1997</string>
+				<string name="ThePest_description">A manic performance that makes Jim Carrey look like Ben Kingsley; The lead actor is talented but this is a poor showcase.</string>
+				<string name="ThePest_rating">1.5 stars</string>
+				<string name="ThePest_image">/mU7BPLQbzJMZbNdQN4fPrOqrW89.jpg</string>
+				<string-array name="ThePest_array">
+			        <item>John Leguizamo</item>
+			        <item>Jeffrey Jones</item>
+			        <item>Edoardo Ballerini</item>
+			        <item>Freddy Rodríguez</item>
+			        <item>Tammy Townsend</item>
+			        <item>Joe Morton</item>
+			        <item>Aries Spears</item>
+			    </string-array>
+				<string name="TheSilenceoftheLambs_title">The Silence of the Lambs</string>
+				<string name="TheSilenceoftheLambs_year">1991</string>
+				<string name="TheSilenceoftheLambs_description">Almost unbearably intense and brilliantly acted.</string>
+				<string name="TheSilenceoftheLambs_rating">3.5 stars</string>
+				<string name="TheSilenceoftheLambs_image">/6IPmLUmer6yXrMrJuX9jY057GsH.jpg</string>
+				<string-array name="TheSilenceoftheLambs_array">
+			        <item>Jodie Foster</item>
+			        <item>Anthony Hopkins</item>
+			        <item>Scott Glenn</item>
+			        <item>Ted Levine</item>
+			        <item>Anthony Heald</item>
+			        <item>Brooke Smith</item>
+			        <item>Diane Baker</item>
+			        <item>Kasi Lemmons</item>
+			        <item>Charles Napier</item>
+			        <item>Tracy Walter</item>
+			        <item>Roger Corman</item>
+			        <item>Chris Isaak</item>
+			    </string-array>
+				<string name="FaceOff_title">Face/Off</string>
+				<string name="FaceOff_year">1997</string>
+				<string name="FaceOff_description">Two thirds of a terrific movie; Silly plotting and dialogue; Action scenes are powerfully good.</string>
+				<string name="FaceOff_rating">3 stars</string>
+				<string name="FaceOff_image">/lCyxuGwDa5UKXiVJ2WUwueYTd6f.jpg</string>
+				<string-array name="FaceOff_array">
+			        <item>John Travolta</item>
+			        <item>Nicolas Cage</item>
+			        <item>Joan Allen</item>
+			        <item>Alessandro Nivola</item>
+			        <item>Gina Gershon</item>
+			        <item>Dominique Swain</item>
+			        <item>Nick Cassavetes</item>
+			        <item>Colm Feore</item>
+			        <item>John Carroll Lynch</item>
+			        <item>CCH Pounder</item>
+			        <item>Margaret Cho</item>
+			        <item>Jamie Denton</item>
+			    </string-array>
+				<string name="Houseof1000Corpses_title">House of 1000 Corpses</string>
+				<string name="Houseof1000Corpses_year">2003</string>
+				<string name="Houseof1000Corpses_description">Sacrifices genuine scares and for gratuitous gore and nonstop profanity;</string>
+				<string name="Houseof1000Corpses_rating">NO STARS</string>
+				<string name="Houseof1000Corpses_image">/5VZwNSY2fqYTvPGeDx24OASjZc8.jpg</string>
+				<string-array name="Houseof1000Corpses_array">
+				    <item>Sid Haig</item>
+				    <item>Bill Moseley</item>
+				    <item>Sheri Moon</item>
+				    <item>Karen Black</item>
+				    <item>Chris Hardwick</item>
+				    <item>Erin Daniels</item>
+				    <item>Jennifer Jostyn</item>
+				    <item>Rainn Wilson</item>
+				    <item>Tom Towles</item>
+				    <item>Dennis Fimple</item>
+				    <item>Michael J. Pollard</item>
+				    <item>Jeanne Carmen</item>
+			    </string-array>
+				<string name="Cliffhanger_title">Cliffhanger</string>
+				<string name="Cliffhanger_year">1993</string>
+				<string name="Cliffhanger_image">/t0LyzisNidtm0gjTGWTaQ5WAIGR.jpg</string>
+				<string name="Cliffhanger_description">Eye popping photography; White-knuckle stunts; Tons of fun; Story is thin, though.</string>
+				<string name="Cliffhanger_rating">3 stars</string>
+				<string-array name="Cliffhanger_array">
+			        <item>Sylvester Stallone</item>
+			        <item>John Lithgow</item>
+			        <item>Michael Rooker</item>
+			        <item>Janine Turner</item>
+			        <item>Paul Winfield</item>
+			        <item>Ralph Waite</item>
+			        <item>Rex Linn</item>
+			        <item>Caroline Goodall</item>
+			        <item>Leon</item>
+			        <item>Craig Fairbrass</item>
+			        <item>Michelle Joyner</item>
+			        <item>Max Perlich</item>
+			    </string-array>
+				<string name="TheShining_title">The Shining</string>
+				<string name="TheShining_year">1980</string>
+				<string name="TheShining_description">Intriguing but fails to reach the desired effects of the original source material; Some eerie scenes for sure, but the film goes on forever.</string>
+				<string name="TheShining_rating">2 stars</string>
+				<string name="TheShining_image">/qoX7LaJSNMEQH6WkkfBHJHlbBDh.jpg</string>
+				<string-array name="TheShining_array">
+			        <item>Jack Nicholson</item>
+			        <item>Shelley Duvall</item>
+			        <item>Danny Lloyd</item>
+			        <item>Scatman Crothers</item>
+			        <item>Barry Nelson</item>
+			        <item>Joe Turkel</item>
+			        <item>Anne Jackson</item>
+			    </string-array>
+				<string name="Titanic_title">Titanic</string>
+				<string name="Titanic_year">1997</string>
+				<string name="Titanic_description">Spectacualr in every way;  The young leads have magnetic performances;  Storytelling savvy and momentum make up for some boring dialogue.</string>
+				<string name="Titanic_rating">3.5 stars</string>
+				<string name="Titanic_image">/2Te2YJoLtT2cHME7i5kDuEwJWZc.jpg</string>
+				<string-array name="Titanic_array">
+			        <item>Leonardo DiCaprio</item>
+			        <item>Kate Winslet</item>
+			        <item>Billy Zane</item>
+			        <item>Frances Fisher</item>
+			        <item>Kathy Bates</item>
+			        <item>David Warner</item>
+			        <item>Danny Nucci</item>
+			        <item>Victor Garber</item>
+			        <item>Gloria Stuart</item>
+			        <item>Bernard Hill</item>
+			        <item>Bernard Fox</item>
+			        <item>Jonathan Hyde</item>
+			        <item>Bill Paxton</item>
+			        <item>Suzy Amis</item>
+			    </string-array>
+				<string name="ConAir_title">Con Air</string>
+				<string name="ConAir_year">1997</string>
+				<string name="ConAir_description">"Megastupid;  Good actors can only do so much with a script this dumb, and dozens of explosions and stunts don't make enough difference."</string>
+				<string name="ConAir_rating">2 stars</string>
+				<string name="ConAir_image">/dgbORR9Jh0lXoPJPH02IFNc0F2b.jpg</string>
+				<string-array name="ConAir_array">
+				    <item>Nicolas Cage</item>
+				    <item>John Cusack</item>
+				    <item>John Malkovich</item>
+				    <item>Steve Buscemi</item>
+				    <item>Ving Rhames</item>
+			        <item>Colm Meaney</item>
+			        <item>Mykelti Williamson</item>
+			        <item>Rachel Ticotin</item>
+			        <item>Nick Chinlund</item>
+			        <item>M.C. Gainey</item>
+			        <item>Brendan Kelly</item>
+			        <item>Danny Trejo</item>
+			        <item>Dave Chappelle</item>
+			    </string-array>
+				<string name="DieHard2_title">Die Hard 2</string>
+				<string name="DieHard2_year">1990</string>
+				<string name="DieHard2_description">Stupendously unbelievable; Lots of violent, large-scale action, and lots of fun- just dont look for lots of logic</string>
+				<string name="DieHard2_rating">3 stars</string>
+				<string name="DieHard2_image">/84JerU8To9KUB8LiVCWtKZ6kZyV.jpg</string>
+				<string-array name="DieHard2_array">
+			        <item>Bruce Willis</item>
+			        <item>Bonnie Bedelia</item>
+			        <item>William Atherton</item>
+			        <item>Reginald VelJohnson</item>
+			        <item>Franco Nero</item>
+			        <item>William Sadler</item>
+			        <item>John Amos</item>
+			        <item>Dennis Franz</item>
+			        <item>Art Evans</item>
+			        <item>Fred Dalton Thompson</item>
+			        <item>Sheila McCarthy</item>
+			        <item>Robert Patrick</item>
+			        <item>John Leguizamo</item>
+			        <item>Robert Costanzo</item>
+			    </string-array>
+				<string name="TheAviator_title">The Aviator</string>
+				<string name="TheAviator_year">2004</string>
+				<string name="TheAviator_description">The director in grand fashion uses Technicolor and all forms of movie magic was used for the film;  </string>
+				<string name="TheAviator_rating">3.5 stars</string>
+				<string name="TheAviator_image">/lPkhOgbkrbPijXWtRoWyUCBIcY4.jpg</string>
+				<string-array name="TheAviator_array">
+			        <item>Leonardo DiCaprio</item>
+			        <item>Cate Blanchett</item>
+			        <item>Kate Beckinsale</item>
+			        <item>John C. Reilly</item>
+			        <item>Alec Baldwin</item>
+			        <item>Alan Alda</item>
+			        <item>Ian Holm</item>
+			        <item>Danny Huston</item>
+			        <item>Gwen Stefani</item>
+			        <item>Jude Law</item>
+			        <item>Adam Scott</item>
+			        <item>Matt Ross</item>
+			        <item>Kelli Garner</item>
+			        <item>Brent Spiner</item>
+			        <item>Edward Herrmann</item>
+			        <item>Willem Dafoe</item>
+			    </string-array>
+				<string name="Signs_title">Signs</string>
+				<string name="Signs_year">2002</string>
+				<string name="Signs_description">It can be silly at times but when it sticks to the scary stuff it makes you jump.</string>
+				<string name="Signs_rating">2.5 stars</string>
+				<string name="Signs_image">/kormVYncbZMrToXaOV58o74LNIz.jpg</string>
+				<string-array name="Signs_array">
+			        <item>Mel Gibson</item>
+			        <item>Joaquin Phoenix</item>
+			        <item>Cherry Jones</item>
+			        <item>Rory Culkin</item>
+			        <item>Abigail Breslin</item>
+			        <item>Patricia Kalember</item>
+			    </string-array>	
+				<string name="MarleyandMe_title">Marley &amp; Me</string>
+				<string name="MarleyandMe_year">2008</string>
+				<string name="MarleyandMe_description">Sweet film;  Parents and dog lovers should approach with caution; The movie follows the dogs life to the very end.</string>
+				<string name="MarleyandMe_rating">3 stars</string>
+				<string name="MarleyandMe_image">/nEGDvf3J9iCnJglx4paIFWyr3Mg.jpg</string>
+				<string-array name="MarleyandMe_array">
+			        <item>Owen Wilson</item>
+			        <item>Jennifer Aniston</item>
+			        <item>Eric Dane</item>
+			        <item>Kathleen Turner</item>
+			        <item>Alan Arkin</item>
+			        <item>Nathan Gamble</item>
+			        <item>Haley Bennett</item>
+			        <item>Joyce Van Patten</item>
+			    </string-array>
+				<string name="IAmLegend_title">I Am Legend</string>
+				<string name="IAmLegend_year">2007</string>
+				<string name="IAmLegend_description">Benefits from the leading mans charisma and physicality but falls back on horror cliches.</string>
+				<string name="IAmLegend_rating">2.5 stars</string>
+				<string name="IAmLegend_image">/9iPIqFYQUc5og7myHIkCO4HJNgd.jpg</string>
+				<string-array name="IAmLegend_array">
+			        <item>Will Smith</item>
+			        <item>Alice Braga</item>
+			        <item>Charlie Tahan</item>
+			        <item>Salli Richardson-Whitfield</item>
+			        <item>Willow Smith</item>
+			        <item>Darrell Foster</item>
+			        <item>Dash Mihok</item>
+			    </string-array>
+				<string name="TurnerandHooch_title">Turner &amp; Hooch</string>
+				<string name="TurnerandHooch_year">1989</string>
+				<string name="TurnerandHooch_description">"They squeeze all the humor they can out of a paper-thin script- but even they can't make up for a bummer of an ending."</string>
+				<string name="TurnerandHooch_rating">2 stars</string>
+				<string name="TurnerandHooch_image">/3AQ7BNf15GYoNTa9ZXlhK9oxnng.jpg</string>
+				<string-array name="TurnerandHooch_array">
+			        <item>Tom Hanks</item>
+			        <item>Mare Winningham</item>
+			        <item>Craig T. Nelson</item>
+			        <item>Reginald VelJohnson</item>
+			        <item>Scott Paulin</item>
+			        <item>J.C. Quinn</item>
+			        <item>John McIntire</item>
+			        <item>Beasley</item>
+			    </string-array>
+				<string name="Blow_title">Blow</string>
+				<string name="Blow_year">2001</string>
+				<string name="Blow_description">Well-acted film based on a real-life figure; only problem is finding a reason to care about him.</string>
+				<string name="Blow_rating">2 stars</string>
+				<string name="Blow_image">/pef3kWHgUpl3iqo7lBGxNG4uf2i.jpg</string>
+				<string-array name="Blow_array">
+			        <item>Johnny Depp</item>
+			        <item>Penélope Cruz</item>
+			        <item>Franka Potente</item>
+			        <item>Paul Reubens</item>
+			        <item>Ray Liotta</item>
+			        <item>Rachel Griffiths</item>
+			        <item>Jordi Mollà</item>
+			        <item>Max Perlich</item>
+			        <item>Cliff Curtis</item>
+			        <item>Ethan Suplee</item>
+			        <item>Emma Roberts</item>
+			        <item>Noah Emmerich</item>
+			        <item>Bob Goldthwait</item>
+			    </string-array>
+				<string name="AmericanPsycho_title">American Psycho</string>
+				<string name="AmericanPsycho_year">2000</string>
+				<string name="AmericanPsycho_description">Makes its satiric points early on, then has nothing to add;  The lead actor gives a dynamic performance in this swollen and congested film.</string>
+				<string name="AmericanPsycho_rating">1.5 stars</string>
+				<string name="AmericanPsycho_image">/9Kq5nLmRyx3Rk6kAnOA5GNiCy1t.jpg</string>
+				<string-array name="AmericanPsycho_array">
+			        <item>Christian Bale</item>
+			        <item>Willem Dafoe</item>
+			        <item>Jared Leto</item>
+			        <item>Reese Witherspoon</item>
+			        <item>Samantha Mathis</item>
+			        <item>Chloë Sevigny</item>			        
+			        <item>Justin Theroux</item>
+			        <item>Guinevere Turner</item>
+			        <item>Matt Ross</item>
+			    </string-array>
+				<string name="Casino_title">Casino</string>
+				<string name="Casino_year">1995</string>
+				<string name="Casino_description">Long, tedious tale; Dissapointing; The story is overlong, repetitive, and aloof.</string>
+				<string name="Casino_rating">2 stars</string>
+				<string name="Casino_image">/vxhWZkSb7OUHRq0Xndt9jzVttdR.jpg</string>
+				<string-array name="Casino_array">
+			        <item>Robert De Niro</item>
+			        <item>Sharon Stone</item>
+			        <item>Joe Pesci</item>
+			        <item>James Woods</item>
+			        <item>Don Rickles</item>
+			        <item>Alan King</item>
+			        <item>Kevin Pollak</item>
+			        <item>L.Q. Jones</item>
+			        <item>Dick Smothers</item>
+			        <item>Frank Vincent</item>
+			        <item>Melissa Prophet</item>
+			        <item>John Bloom</item>
+			    </string-array>
+				<string name="Crank_title">Crank</string>
+				<string name="Crank_year">2006</string>
+				<string name="Crank_rating">2 stars</string>
+				<string name="Crank_image">/aKiMpHQRjfmQAVI5LDSgV6BbdId.jpg</string>
+				<string name="Crank_description">"Silly premise may entertain fans with the attention span of a beagle;  The action doesn't let up."</string>
+				<string-array name="Crank_array">
+			        <item>Jason Statham</item>
+			        <item>Amy Smart</item>
+			        <item>Jose Pablo Cantillo</item>
+			        <item>Efren Ramirez</item>
+			        <item>Dwight Yoakam</item>
+			        <item>Carlos Sanz</item>
+			        <item>Reno Wilson</item>
+			    </string-array>
+				<string name="MenInBlack_title">Men In Black</string>
+				<string name="MenInBlack_year">1997</string>
+				<string name="MenInBlack_rating">3 stars</string>
+				<string name="MenInBlack_image">/o17MKb2hyuqtb0P6xLdNY4HaxDi.jpg</string>
+				<string name="MenInBlack_description">Outrageous and original at every turn;  Sharp pacing that never lets up; Snappy script</string>
+				<string-array name="MenInBlack_array">
+			        <item>Tommy Lee Jones</item>
+			        <item>Will Smith</item>
+			        <item>Linda Fiorentino</item>
+			        <item>Rip Torn</item>
+			        <item>"Vincent D'Onofrio"</item>
+			        <item>Tony Shalhoub</item>
+			        <item>Siobhan Fallon</item>
+			    </string-array>
+				<string name="EnemyoftheState_title">Enemy of the State</string>
+				<string name="EnemyoftheState_year">1998</string>
+				<string name="EnemyoftheState_rating">3 stars</string>
+				<string name="EnemyoftheState_image">/mja9IcCEYtiUjtIuBYVwTzdePXv.jpg</string>
+				<string name="EnemyoftheState_description">Crackerjack thriller;  Never takes a breath!</string>
+				<string-array name="EnemyoftheState_array">
+			        <item>Will Smith</item>
+			        <item>Gene Hackman</item>
+			        <item>Jon Voight</item>
+			        <item>Lisa Bonet</item>
+			        <item>Regina King</item>
+			        <item>Stuart Wilson</item>
+			        <item>Tom Sizemore</item>
+			        <item>Loren Dean</item>
+			        <item>Barry Pepper</item>
+			        <item>Ian Hart</item>
+			        <item>Jake Busey</item>
+			        <item>Scott Caan</item>
+			        <item>Jason Lee</item>
+			        <item>Gabreil Byrne</item>
+			        <item>James LeGros</item>
+			        <item>Dan Butler</item>
+			        <item>Jamie Kennedy</item>
+			        <item>Bodhi Pine Elfman</item>
+			        <item>Jack Black</item>
+			    </string-array>
+				<string name="IRobot_title">"I, Robot"</string>
+				<string name="IRobot_year">2004</string>
+				<string name="IRobot_rating">2.5 stars</string>
+				<string name="IRobot_image">/iNeKWgcTqUJhBToaosUXgca2nSY.jpg</string>
+				<string name="IRobot_description">Interersting premise is squandered by this obvious and overlong film;  Cartoonish special effects.</string>
+				<string-array name="IRobot_array">
+			        <item>Will Smith</item>
+			        <item>Bridget Moynahan</item>
+			        <item>Bruce Greenwood</item>
+			        <item>James Cromwell</item>
+			        <item>Chi McBride</item>
+			        <item>Shia LeBeouf</item>
+			        <item>Adrian Ricard</item>
+			        <item>Alan Tudyk</item>
+			    </string-array>
+				<string name="ForgettingSarahMarshall_title">Forgetting Sarah Marshall</string>
+				<string name="ForgettingSarahMarshall_year">2008</string>
+				<string name="ForgettingSarahMarshall_rating">3 stars</string>
+				<string name="ForgettingSarahMarshall_image">/bMKM38kagsyTPXkilIcZJZsgRH6.jpg</string>
+				<string name="ForgettingSarahMarshall_description">Smart and funny;  Pushes the envelope for sexual content but never loses sight of real emotions</string>
+				<string-array name="ForgettingSarahMarshall_array">
+			        <item>Jason Segel</item>
+			        <item>Mila Kunis</item>
+			        <item>Kristen Bell</item>
+			        <item>Paul Rudd</item>
+			        <item>Bill Hader</item>
+			        <item>Russell Brand</item>
+			        <item>Jonah Hill</item>
+			        <item>Jack McBrayer</item>
+			        <item>Maria Thayer</item>
+			        <item>William Baldwin</item>
+			        <item>Jason Bateman</item>
+			        <item>Steve Landesberg</item>
+			    </string-array>
+				<string name="WildThings_title">Wild Things</string>
+				<string name="WildThings_year">1998</string>
+				<string name="WildThings_rating">3 stars</string>
+				<string name="WildThings_image">/7EyZEH2gG1sgUrxv6824BKo7a25.jpg</string>
+				<string name="WildThings_description">This raunchy, entertaining neo-noir has more twists than a pretzel factory; Gorgeously photographed and well played, it never takes itself too seriously.</string>
+				<string-array name="WildThings_array">
+			        <item>Kevin Bacon</item>
+			        <item>Matt Dillon</item>
+			        <item>Neve Campbell</item>
+			        <item>Theresa Russell</item>
+			        <item>Denise Richards</item>
+			        <item>Daphne Rubin-Vega</item>
+			        <item>Robert Wagner</item>
+			        <item>Bill Murray</item>
+			        <item>Carrie Snodgress</item>
+			        <item>Jeff Perry</item>
+			        <item>Marc Macaulay</item>
+			    </string-array>
+				<string name="EasternPromises_title">Eastern Promises</string>
+				<string name="EasternPromises_year">2007</string>
+				<string name="EasternPromises_rating">3 stars</string>
+				<string name="EasternPromises_image">/2KXazELFTgwrS05ncYdkpJJ7Jne.jpg</string>
+				<string name="EasternPromises_description">Intelligent thriller, set against a rich tableau</string>
+				<string-array name="EasternPromises_array">
+			        <item>Josef Altin</item>
+			        <item>Viggo Mortensen</item>
+			        <item>Sarah-Jeanne Labrosse</item>
+			        <item>Naomi Watts</item>
+			        <item>Raza Jaffrey</item>
+			        <item>Sinéad Cusack</item>
+			        <item>Jerzy Skolimowski</item>
+			        <item>Tatiana Maslany</item>
+			        <item>Vincent Cassel</item>
+			        <item>Armin Mueller-Stahl</item>
+			        <item>Mina E. Mina</item>
+			    </string-array>
+				<string name="TheHangover_title">The Hangover</string>
+				<string name="TheHangover_year">2009</string>
+				<string name="TheHangover_rating">3 stars</string>
+				<string name="TheHangover_image">/pTtIgNKkjGKX2s6EOCnlWzq6N3D.jpg</string>
+				<string name="TheHangover_description">Occasionally raunchy but ingeniously plotted and well acted.</string>
+				<string-array name="TheHangover_array">
+			        <item>Bradley Cooper</item>
+			        <item>Ed Helms</item>
+			        <item>Zach Galifianakis</item>
+			        <item>Justin Bartha</item>
+			        <item>Heather Graham</item>
+			        <item>Sasha Barrese</item>
+			        <item>Jeffrey Tambor</item>
+			        <item>Ken Jeong</item>
+			        <item>Rachael Harris</item>
+			        <item>Mike Tyson</item>
+			        <item>Mike Epps</item>
+			    </string-array>
+				<string name="Babe_title">Babe</string>
+				<string name="Babe_year">1995</string>
+				<string name="Babe_rating">3.5 stars</string>
+				<string name="Babe_image">/cEuZLWvgfKaBF2hrGlduOqWj0cH.jpg</string>
+				<string name="Babe_description">This is one family film that adults can enjoy right along with their kids. Enduring(and often very funny) tale. Oscar winning special effects.</string>
+				<string-array name="Babe_array">
+			        <item>Christine Cavanaugh</item>
+			        <item>Miriam Margolyes</item>
+			        <item>Danny Mann</item>
+			        <item>Hugo Weaving</item>
+			        <item>Miriam Flynn</item>
+			        <item>Russi Taylor</item>
+			        <item>Roscoe Lee Browne</item>
+			        <item>Evelyn Krape</item>
+			        <item>James Cromwell</item>
+			        <item>Magda Szubanski</item>
+			        <item>Paul Goddard</item>
+			    </string-array>
+				<string name="FieldofDreams_title">Field of Dreams</string>
+				<string name="FieldofDreams_year">1989</string>
+				<string name="FieldofDreams_rating">3.5 stars</string>
+				<string name="FieldofDreams_image">/gWxUpDKKEOk1K72tpilzhZWqWNe.jpg</string>
+				<string name="FieldofDreams_description">A story of redemption and faith, with moments that are pure magic; Maintains the right note from start to finish.</string>
+				<string-array name="FieldofDreams_array">
+			        <item>Kevin Costner</item>
+			        <item>Amy Madigan</item>
+			        <item>Gaby Hoffmann</item>
+			        <item>Ray Liotta</item>
+			        <item>Timothy Busfield</item>
+			        <item>James Earl Jones</item>
+			        <item>Burt Lancaster</item>
+			        <item>Frank Whaley</item>
+			        <item>Dwier Brown</item>
+			        <item>Kelly Coffield Park</item>
+			        <item>Michael Milhoan</item>
+			    </string-array>
+				<string name="NightoftheLivingDead_title">Night of the Living Dead</string>
+				<string name="NightoftheLivingDead_year">1968</string>
+				<string name="NightoftheLivingDead_rating">3.5 stars</string>
+				<string name="NightoftheLivingDead_image">/jixekHe0lX093eZHUe5wqKM8SOR.jpg</string>
+				<string name="NightoftheLivingDead_description">Film is less stomach-churning by today\'s standards, yet its essential power to chill remains undeminished despite scores of imitations.</string>
+				<string-array name="NightoftheLivingDead_array">
+			        <item>Duane Jones</item>
+			        <item>"Judith O'Dea"</item>
+			        <item>Karl Hardman</item>
+			        <item>Marilyn Eastman</item>
+			        <item>Keith Wayne</item>
+			        <item>Judith Ridley</item>
+			        <item>Kyra Schon</item>
+			        <item>Charles Craig</item>
+			        <item>S. William Hinzman</item>
+			        <item>George Kosana</item>
+			        <item>Frank Doak</item>
+			    </string-array>
+				<string name="XMenTheLastStand_title">"X-Men: The Last Stand"</string>
+				<string name="XMenTheLastStand_year">2006</string>
+				<string name="XMenTheLastStand_rating">2 stars</string>
+				<string name="XMenTheLastStand_description">Shortchanges character development in favor of explosions and special effects</string>
+				<string name="XMenTheLastStand_image">/4WRkTbxkxoSBjfnRqaP4M22pZs3.jpg</string>
+				<string-array name="XMenTheLastStand_array">
+			        <item>Hugh Jackman</item>
+			        <item>Halle Berry</item>
+			        <item>Ian McKellen</item>
+			        <item>Patrick Stewart</item>
+			        <item>Famke Janssen</item>
+			        <item>Anna Paquin</item>
+			        <item>Kelsey Grammer</item>
+			        <item>James Marsden</item>
+			        <item>Rebecca Romijn</item>
+			        <item>Shawn Ashmore</item>
+			        <item>Aaron Stanford</item>
+			    </string-array>
+				<string name="IndependenceDay_title">Independence Day</string>
+				<string name="IndependenceDay_year">1996</string>
+				<string name="IndependenceDay_rating">2.5 stars</string>
+				<string name="IndependenceDay_image">/jQCUFxXOaBQS96EpHPAM6mIe3b.jpg</string>
+				<string name="IndependenceDay_description">Spectacular and spectacularly stupid; Special effects are impressive; The human stories are so dump and the writing is so lame.</string>
+				<string-array name="IndependenceDay_array">
+			        <item>Will Smith</item>
+			        <item>Bill Pullman</item>
+			        <item>Jeff Goldblum</item>
+			        <item>Mary McDonnell</item>
+			        <item>Judd Hirsch</item>
+			        <item>Robert Loggia</item>
+			        <item>Randy Quaid</item>
+			        <item>Margaret Colin</item>
+			        <item>Vivica A. Fox</item>
+			        <item>James Rebhorn</item>
+			        <item>Harvey Fierstein</item>
+			    </string-array>
+				<string name="MarsAttacks_title">"Mars Attacks!"</string>
+				<string name="MarsAttacks_year">1996</string>
+				<string name="MarsAttacks_rating">2.5 stars</string>
+				<string name="MarsAttacks_image">/dS0ehqlQSf1X8IXJsWEBSH3zV3F.jpg</string>
+				<string name="MarsAttacks_description">Great effects and animation but awfully broad and one-note in tone</string>
+				<string-array name="MarsAttacks_array">
+			        <item>Jack Nicholson</item>
+			        <item>Glenn Close</item>
+			        <item>Annette Bening</item>
+			        <item>Pierce Brosnan</item>
+			        <item>Danny DeVito</item>
+			        <item>Martin Short</item>
+			        <item>Sarah Jessica Parker</item>
+			        <item>Michael J. Fox</item>
+			        <item>Rod Steiger</item>
+			        <item>Tom Jones</item>
+			        <item>Jim Brown</item>
+			    </string-array>
+				<string name="Cloverfield_title">Cloverfield</string>
+				<string name="Cloverfield_year">2008</string>
+				<string name="Cloverfield_image">/nmDeGIKRLebvuqKt4gjmCPfeKHV.jpg</string>
+				<string name="Cloverfield_rating">3 stars</string>
+				<string name="Cloverfield_description">Runs on pure adrenaline and never lets up, with some good shocks and a formidable creature.</string>
+				<string-array name="Cloverfield_array">
+			        <item>Lizzy Caplan</item>
+			        <item>Jessica Lucas</item>
+			        <item>T.J. Miller</item>
+			        <item>Michael Stahl-David</item>
+			        <item>Mike Vogel</item>
+			        <item>Odette Annable</item>
+			        <item>Anjul Nigam</item>
+			        <item>Margot Farley</item>
+			        <item>Theo Rossi</item>
+			        <item>Brian Klugman</item>
+			        <item>Kelvin Yu</item>
+			    </string-array>
+				<string name="Dragonheart_title">Dragonheart</string>
+				<string name="Dragonheart_year">1996</string>
+				<string name="Dragonheart_rating">3 stars</string>
+				<string name="Dragonheart_image">/8uuxCakfVvf5WflFacBHfwU3d8J.jpg</string>
+				<string name="Dragonheart_description">Unlikely premise is made possible by the lead\'s persuasive performance; State-of-the-art digital animation.</string>
+				<string-array name="Dragonheart_array">
+			        <item>Dennis Quaid</item>
+			        <item>David Thewlis</item>
+			        <item>Pete Postlethwaite</item>
+			        <item>Dina Meyer</item>
+			        <item>Jason Isaacs</item>
+			        <item>Brian Thompson</item>
+			        <item>Lee Oakes</item>
+			        <item>Wolf Christian</item>
+			        <item>"Terry O'Neill"</item>
+			        <item>Eva Vejmelková</item>
+			        <item>Milan Bahúl</item>
+			    </string-array>
+				<string name="HowtoTrainYourDragon_title">How to Train Your Dragon</string>
+				<string name="HowtoTrainYourDragon_year">2010</string>
+				<string name="HowtoTrainYourDragon_rating">3 stars</string>
+				<string name="HowtoTrainYourDragon_image">/3eR9HOkPZUbrGWDRdKHeKoiMLc4.jpg</string>
+				<string name="HowtoTrainYourDragon_description">Often enthraling; Adapted by a British series of books; Only resorts to formula storytelling at the climax</string>
+				<string-array name="HowtoTrainYourDragon_array">
+			        <item>Jay Baruchel</item>
+			        <item>Gerard Butler</item>
+			        <item>Craig Ferguson</item>
+			        <item>America Ferrera</item>
+			        <item>Jonah Hill</item>
+			        <item>Christopher Mintz-Plasse</item>
+			        <item>T.J. Miller</item>
+			        <item>Kristen Wiig</item>
+			        <item>Robin Atkin Downes</item>
+			        <item>Ashley Jensen</item>
+			        <item>David Tennant</item>
+			    </string-array>
+				<string name="TheNeverendingStory_title">The Neverending Story</string>
+				<string name="TheNeverendingStory_year">1984</string>
+				<string name="TheNeverendingStory_rating">3 stars</string>
+				<string name="TheNeverendingStory_image">/3HlldosIEcHwgOdqGK46Oy1h6nq.jpg</string>
+				<string name="TheNeverendingStory_description">Amazing, unique effects, charcaters, and visual design.</string>
+				<string-array name="TheNeverendingStory_array">
+			        <item>Barret Oliver</item>
+			        <item>Gerald McRaney</item>
+			        <item>Drum Garrett</item>
+			        <item>Darryl Cooksey</item>
+			        <item>Nicholas Gilbert</item>
+			        <item>Thomas Hill</item>
+			        <item>Deep Roy</item>
+			        <item>Tilo Prückner</item>
+			        <item>Moses Gunn</item>
+			        <item>Noah Hathaway</item>
+			        <item>Alan Oppenheimer</item>
+			    </string-array>
+				<string name="Beowulf_title">Beowulf</string>
+				<string name="Beowulf_year">2007</string>
+				<string name="Beowulf_rating">2.5 stars</string>
+				<string name="Beowulf_image">/aD43Id2dt9WPGRmWzIVpvpPYXrC.jpg</string>
+				<string name="Beowulf_description">The action scenes are visceral and effective, but the story bogs down and the faces of the female characters are lifeless.</string>
+				<string-array name="Beowulf_array">
+			        <item>Robin Wright</item>
+			        <item>Anthony Hopkins</item>
+			        <item>Paul Baker</item>
+			        <item>John Malkovich</item>
+			        <item>Leslie Zemeckis</item>
+			        <item>Charlotte Salt</item>
+			        <item>Sonje Fortag</item>
+			        <item>Julene Renee-Preciado</item>
+			        <item>Greg Ellis</item>
+			        <item>Rik Young</item>
+			        <item>Sebastian Roché</item>
+			    </string-array>
+				<string name="ReignofFire_title">Reign of Fire</string>
+				<string name="ReignofFire_year">2002</string>
+				<string name="ReignofFire_rating">2 stars</string>
+				<string name="ReignofFire_image">/1R7c18aWnoe0RUEcPnc23sIxeFg.jpg</string>
+				<string name="ReignofFire_description">A bleak tale; It\'s hard to care about anyone in this dour story.</string>
+				<string-array name="ReignofFire_array">
+			        <item>Christian Bale</item>
+			        <item>Matthew McConaughey</item>
+			        <item>Izabella Scorupco</item>
+			        <item>Gerard Butler</item>
+			        <item>Scott Moutter</item>
+			        <item>David Kennedy</item>
+			        <item>Alexander Siddig</item>
+			        <item>Ned Dennehy</item>
+			        <item>Rory Keenan</item>
+			        <item>Terence Maynard</item>
+			        <item>Doug Cockle</item>
+			    </string-array>
+				<string name="DragonWars_title">"Dragon Wars:\n D-War"</string>
+				<string name="DragonWars_year">2007</string>
+				<string name="DragonWars_rating">2 stars</string>
+				<string name="DragonWars_image">/nAaY928uxrriho7LJpLfFTLXLp9.jpg</string>
+				<string name="DragonWars_description">A dopey B monster movie elevated(only slightly) by some impressive effects.</string>
+				<string-array name="DragonWars_array">
+			        <item>Jason Behr</item>
+			        <item>Amanda Brooks</item>
+			        <item>Robert Forster</item>
+			        <item>Craig Robinson</item>
+			        <item>Aimee Garcia</item>
+			        <item>Chris Mulkey</item>
+			        <item>John Ales</item>
+			        <item>Elizabeth Peña</item>
+			        <item>Billy Gardell</item>
+			        <item>Holmes Osborne</item>
+			        <item>NiCole Robinson</item>
+			    </string-array>
+				<string name="TexasChainsawMassacre_title">The Texas Chainsaw Massacre</string>
+	    		<string name="TexasChainsawMassacre_year">2003</string>
+	    		<string name="TexasChainsawMassacre_rating">1.5 stars</string>
+	    		<string name="TexasChainsawMassacre_image">/KHG2Hbetp7thiMKp0dKIRR3f6C.jpg</string>
+	    		<string name="TexasChainsawMassacre_description">"Once it kicks into gear, its brutally unrelenting toward its unappealing characters - and the audience;  Completely lacks the leavening sense of humor that enhanced the original."</string>
+				<string-array name="TexasChainsawMassacre_array">
+			        <item>Jessica Biel</item>
+			        <item>Jonathan Tucker</item>
+			        <item>Erica Leerhsen</item>
+			        <item>Mike Vogel</item>
+			        <item>Eric Balfour</item>
+			        <item>Andrew Bryniarski</item>
+			        <item>R. Lee Ermey</item>
+			        <item>David Dorfman</item>
+			        <item>John Larroquette</item>
+			    </string-array>
+				<string name="Spawn_title">Spawn</string>
+			    <string name="Spawn_year">1997</string>
+			    <string name="Spawn_rating">2 stars</string>
+			    <string name="Spawn_image">/7E4L5RXOIEhTox5Qk9kw0MoInuS.jpg</string>
+			    <string name="Spawn_description">"Baroque art style is film's major virtue, but that can't overcome its many faults, including a boring, familiar, illogical plot."</string>
+				<string-array name="Spawn_array">
+			        <item>John Leguizamo</item>
+			        <item>Michael Jai White</item>
+			        <item>Martin Sheen</item>
+			        <item>Theresa Randle</item>
+			        <item>D.B. Sweeney</item>
+			        <item>Nicol Williamson</item>
+			        <item>Melinda Clarke</item>
+			        <item>Miko Hughes</item>
+			    </string-array>
+				<string name="PiratesoftheCarribean_title">Pirates of the Caribbean: The Curse of the Black Pearl</string>
+			    <string name="PiratesoftheCarribean_year">2003</string>
+			    <string name="PiratesoftheCarribean_rating">2.5 stars</string>
+			    <string name="PiratesoftheCarribean_image">/jpRpigNQUjNlfx0gYRBJ30tQIOl.jpg</string>
+			    <string name="PiratesoftheCarribean_description">Stylishly designed and shot, with rollicking performances; This depends more on special effects.</string>
+				<string-array name="PiratesoftheCarribean_array">
+			        <item>Johnny Depp</item>
+			        <item>Geoffrey Rush</item>
+			        <item>Orlando Bloom</item>
+			        <item>Keira Knightly</item>
+			        <item>Jonathan Pryce</item>
+			        <item>Jack Davenport</item>
+			        <item>Kevin R. McNally</item>
+			        <item>Zoe Saldana</item>
+			    </string-array>
+				<string name="FightClub_title">Fight Club</string>
+			    <string name="FightClub_year">1999</string>
+			    <string name="FightClub_rating">2 stars</string>
+			    <string name="FightClub_image">/mMZRKb3NVo5ZeSPEIaNW9buLWQ0.jpg</string>
+			    <string name="FightClub_description">Draws you in with its intriguing story, black comedy, and flamboyant visuals, then shifts tone.</string>
+				<string-array name="FightClub_array">
+			        <item>Brad Pitt</item>
+			        <item>Edward Norton</item>
+			        <item>Helena Bonham Carter</item>
+			        <item>Meat Loaf</item>
+			        <item>Jared Leto</item>
+			    </string-array>
+				<string name="TheUsualSuspects_title">The Usual Suspects</string>
+			    <string name="TheUsualSuspects_year">1995</string>
+			    <string name="TheUsualSuspects_rating">2.5 stars</string>
+			    <string name="TheUsualSuspects_image">/h1THFzcdGON2o031jXhLjAQvxMW.jpg</string>
+			    <string name="TheUsualSuspects_description">Terrific cast; Highly praised, but to our minds, too clever for its own good.</string>
+				<string-array name="TheUsualSuspects_array">
+			        <item>Stephen Baldwin</item>
+			        <item>Gabriel Byrne</item>
+			        <item>Chazz Palminteri</item>
+			        <item>Kevin Pollak</item>
+			        <item>Pete Postlethwaite</item>
+			        <item>Kevin Spacey</item>
+			        <item>Suzy Amis</item>
+			        <item>Benicio Del Toro</item>
+			        <item>Giancarlo Esposito</item>
+			        <item>Dan Hedaya</item>
+			        <item>Paul Bartel</item>
+			    </string-array>
+				<string name="SinCity_title">Sin City</string>
+			    <string name="SinCity_year">2005</string>
+			    <string name="SinCity_rating">1.5 stars</string>
+			    <string name="SinCity_image">/s8xyXsNs2c8tU7xkGPN8UImCLkW.jpg</string>
+			    <string name="SinCity_description">Stylish, but completely artificial; The excitement of watching these images soon dies off but the film refuses to do the same.</string>
+				<string-array name="SinCity_array">
+			        <item>Bruce Willis</item>
+			        <item>Clive Owen</item>
+			        <item>Jessica Alba</item>
+			        <item>Benicio Del Toro</item>
+			        <item>Rosario Dawson</item>
+			        <item>Jaime King</item>
+			        <item>Brittany Murphy</item>
+			        <item>Mickey Rourke</item>
+			        <item>Carla Gugino</item>
+			        <item>Elijah Wood</item>
+			        <item>Devon Aoki</item>
+			        <item>Alexis Bledel</item>
+			        <item>Powers Boothe</item>
+			        <item>Michael Clake Duncan</item>
+			        <item>Josh Hartnett</item>
+			        <item>Rutger Hauer</item>
+			        <item>Michael Madsen</item>
+			        <item>Nick Stahl</item>
+			        <item>Nicky Katt</item>
+			        <item>Marley Shelton</item>
+			    </string-array>
+			    <string name="ForrestGump_title">Forrest Gump</string>
+			    <string name="ForrestGump_year">1994</string>
+			    <string name="ForrestGump_rating">2.5 stars</string>
+			    <string name="ForrestGump_image">/wMgbnUVS9wbRGAdki8fqxKU1O0N.jpg</string>
+			    <string name="ForrestGump_description">"You either go along with the serious and comedic whimsy of the film or you dont(we didn't); Its a long journey"</string>
+				<string-array name="ForrestGump_array">
+			        <item>Tom Hanks</item>
+			        <item>Robin Wright</item>
+			        <item>Gary Sinise</item>
+			        <item>Sally Field</item>
+			        <item>Mykelti Williamson</item>
+			        <item>Michael Humphreys</item>
+			        <item>Hanna Hall</item>
+			        <item>Haley Joel Osment</item>
+			    </string-array>
+				<string name="Evolution_title">Evolution</string>
+			    <string name="Evolution_year">2001</string>
+			    <string name="Evolution_rating">2 stars</string>
+			    <string name="Evolution_image">/wOsiMb2pqZT5B5ocECGK8sCUrVZ.jpg</string>
+			    <string name="Evolution_description">Loud, silly and only occasionally funny</string>
+				<string-array name="Evolution_array">
+			        <item>David Duchovny</item>
+			        <item>Orlando Jones</item>
+			        <item>Julianne Moore</item>
+			        <item>Seann William Scott</item>
+			        <item>Ted Levine</item>
+			        <item>Ethan Suplee</item>
+			        <item>Michael Bower</item>
+			        <item>Dan Aykroyd</item>
+			        <item>Sarah Silverman</item>
+			        <item>Richard Moll</item>
+			    </string-array>
+				<string name="TheLastoftheMohicans_title">The Last of the Mohicans</string>
+			    <string name="TheLastoftheMohicans_year">1992</string>
+			    <string name="TheLastoftheMohicans_rating">3.5 stars</string>
+			    <string name="TheLastoftheMohicans_image">/wBj7tkJP9ZOZlvu7LHBYaCCKh65.jpg</string>
+			    <string name="TheLastoftheMohicans_description">"Filled with 1990's sensebilities, potent depiction of violence, and a charismatic central performance."</string>
+				<string-array name="TheLastoftheMohicans_array">
+			        <item>Daniel Day-Lewis</item>
+			        <item>Madeleine Stowe</item>
+			        <item>Russell Means</item>
+			        <item>Eric Schweig</item>
+			        <item>Jodhi May</item>
+			        <item>Steven Waddington</item>
+			        <item>Wes Studi</item>
+			        <item>Maurice Roëves</item>
+			        <item>Patrice Chéreau</item>
+			        <item>Colm Meaney</item>
+			        <item>Pete Postlethwaite</item>
+			    </string-array>
+				<string name="MiamiVice_title">Miami Vice</string>
+			    <string name="MiamiVice_year">2006</string>
+			    <string name="MiamiVice_rating">2.5 stars</string>
+			    <string name="MiamiVice_image">/w6wTY7pEXi8JglQ23JGVDPBWVnl.jpg</string>
+			    <string name="MiamiVice_description">Watchable on a make-believe level but the final showdown is awfully conventional</string>
+				<string-array name="MiamiVice_array">
+			        <item>Jamie Foxx</item>
+			        <item>Colin Farrell</item>
+			        <item>Gong Li</item>
+			        <item>Naomie Harris</item>
+			        <item>Ciarán Hinds</item>
+			        <item>Justin Theroux</item>
+			        <item>Barry Shabaka Henley</item>
+			        <item>Luis Tosar</item>
+			        <item>John Ortiz</item>
+			        <item>Elizabeth Rodriguez</item>
+			        <item>Eddie Marsan</item>
+			        <item>John Hawkes</item>
+			        <item>Isaach De Bankolé</item>
+			    </string-array>
+				<string name="Moneyball_title">Moneyball</string>
+			    <string name="Moneyball_year">2011</string>
+			    <string name="Moneyball_rating">3 stars</string>
+			    <string name="Moneyball_image">/4PsQNjA2lK65j6ZE9sz88ml6owb.jpg</string>
+			    <string name="Moneyball_description">Smart, interesting drama; Based on a best-selling book;</string>
+				<string-array name="Moneyball_array">
+			        <item>Brad Pitt</item>
+			        <item>Jonah Hill</item>
+			        <item>Philip Seymour Hoffman</item>
+			        <item>Robin Wright</item>
+			        <item>Chris Pratt</item>
+			        <item>Stephen Bishop</item>
+			        <item>Reed Diamond</item>
+			        <item>Brent Jennings</item>
+			        <item>Ken Medlock</item>
+			        <item>Tammy Blanchard</item>
+			        <item>Jack McGee</item>
+			        <item>Kerris Dorsey</item>
+			        <item>Arliss Howard</item>
+			        <item>Glenn Morshower</item>
+			    </string-array>
+				<string name="MrandMrsSmith_title">Mr and Mrs Smith</string>
+			    <string name="MrandMrsSmith_year">2005</string>
+			    <string name="MrandMrsSmith_rating">3 stars</string>
+			    <string name="MrandMrsSmith_image">/n4GhKs24bQK2XsdlZ5bZFljzlsK.jpg</string>
+			    <string name="MrandMrsSmith_description">"Its not to be taken seriously; Not your parent's romantic star vehicle."</string>
+				<string-array name="MrandMrsSmith_array">
+			        <item>Brad Pitt</item>
+			        <item>Angelina Jolie</item>
+			        <item>Vince Vaughn</item>
+			        <item>Adam Brody</item>
+			        <item>Kerry Washington</item>
+			        <item>Keith David</item>
+			        <item>Chris Weitz</item>
+			        <item>Rachael Huntley</item>
+			        <item>Michelle Monaghan</item>
+			        <item>Angela Bassett</item>
+			        <item>William Fichtner</item>
+			    </string-array>
+				<string name="Primer_title">Primer</string>
+			    <string name="Primer_year">2004</string>
+			    <string name="Primer_rating">3 stars</string>
+			    <string name="Primer_image">/dG7Booc7C2HoVmAZjqAzp2NcTGd.jpg</string>
+			    <string name="Primer_description">Loaded with ideas and imagination; Occasionally bogs down in technical jargon, but still well worth watching.</string>
+				<string-array name="Primer_array">
+			        <item>Shane Carruth</item>
+			        <item>David Sullivan</item>
+			        <item>Casey Gooden</item>
+			        <item>Anand Upadhyaya</item>
+			        <item>Carrie Crawford</item>
+			    </string-array>
+				<string name="PointBreak_title">Point Break</string>
+			    <string name="PointBreak_year">1991</string>
+			    <string name="PointBreak_rating">2.5 stars</string>
+			    <string name="PointBreak_image">/s52YxXPHGODDX7IJFBcLvvkP8q6.jpg</string>
+			    <string name="PointBreak_description">Incredible, mind-numbing plotline; Fast Moving direction by the director</string>
+				<string-array name="PointBreak_array">
+			        <item>Patrick Swayze</item>
+			        <item>Keanu Reeves</item>
+			        <item>Gary Busey</item>
+			        <item>Lori Petty</item>
+			        <item>John C. McGinley</item>
+			        <item>James Le Gros</item>
+			        <item>John Philbin</item>
+			        <item>Sydney Walsh</item>
+			        <item>Vincent Klyn</item>
+			        <item>Julian Reyes</item>
+			        <item>Tom Sizemore</item>
+			    </string-array>
+				<string name="TheRookie_title">The Rookie</string>
+			    <string name="TheRookie_year">2002</string>
+			    <string name="TheRookie_rating">3 stars</string>
+			    <string name="TheRookie_image">/bFYz43Crr8mc1NBRYRlUWLZfq0d.jpg</string>
+			    <string name="TheRookie_description">Up-beat, feel good movie; Based on a true story</string>			
+				<string-array name="TheRookie_array">
+			        <item>Dennis Quaid</item>
+			        <item>Rachel Griffiths</item>
+			        <item>Jay Hernandez</item>
+			        <item>Beth Grant</item>
+			        <item>Angus T. Jones</item>
+			        <item>Brian Cox</item>
+			        <item>Rick Gonzalez</item>
+			        <item>Royce D. Applegate</item>
+			    </string-array>
+				<string name="Kingpin_title">Kingpin</string>
+			    <string name="Kingpin_year">1996</string>
+			    <string name="Kingpin_rating">1.5 stars</string>
+			    <string name="Kingpin_image">/78p6zZm5WefWLaAg542E8Oq1TzM.jpg</string>
+			    <string name="Kingpin_description">"Stupid and proud of it;  Setups for laugh lines or visual punch lines are muffed tome and tome again.  What a waste"</string>
+				<string-array name="Kingpin_array">
+			        <item>Woody Harrelson</item>
+			        <item>Randy Quaid</item>
+			        <item>Vanessa Angel</item>
+			        <item>Bill Murray</item>
+			        <item>Chris Elliott</item>
+			        <item>William Jordan</item>
+			        <item>Richard Tyson</item>
+			        <item>Rob Moran</item>
+			        <item>Lin Shaye</item>
+			        <item>Zen Gesner</item>
+			    </string-array>
+				<string name="InterviewwiththeVampire_title">Interview with the Vampire: The Vampire Chronicles</string>
+			    <string name="InterviewwiththeVampire_year">1994</string>
+			    <string name="InterviewwiththeVampire_rating">1.5 stars</string>
+			    <string name="InterviewwiththeVampire_image">/g6n5ruRyp4CBmtc5wKzijiVoBkt.jpg</string>
+			    <string name="InterviewwiththeVampire_description">"Unappealing, unrelenting, and (after awhile) downright boring. The Actors can't be faulted."</string>
+				<string-array name="InterviewwiththeVampire_array">
+			        <item>Tom Cruise</item>
+			        <item>Brad Pitt</item>
+			        <item>Antonio Banderas</item>
+			        <item>Stephen Rea</item>
+			        <item>Christian Slater</item>
+			        <item>Kirsten Dunst</item>
+			        <item>Domiziana Giordano</item>
+			        <item>Thandie Newton</item>
+			        <item>Indra Ové</item>
+			    </string-array>
+				<string name="WhiteChicks_title">White Chicks</string>
+			    <string name="WhiteChicks_year">2004</string>
+			    <string name="WhiteChicks_rating">2 stars</string>
+			    <string name="WhiteChicks_image">/fLLrqJQvn1IxcvkqwhJwKKo5UEZ.jpg</string>
+			    <string name="WhiteChicks_description">Logic is set aside in this one; A series of broad, silly riffs, poking fun at stereotypical people.</string>
+				<string-array name="WhiteChicks_array">
+			        <item>Shawn Wayans</item>
+			        <item>Marlon Wayans</item>
+			        <item>Jaime King</item>
+			        <item>Frankie Faison</item>
+			        <item>Lochlyn Munro</item>
+			        <item>John Heard</item>
+			        <item>Busy Philipps</item>
+			        <item>Terry Crews</item>
+			        <item>Brittany Daniel</item>
+			        <item>Eddie Velez</item>
+			        <item>Jessica Cauffiel</item>
+			        <item>Maitland Ward</item>
+			        <item>Anne Dudek</item>
+			        <item>Jennifer Carpenter</item>
+			    </string-array>
+				<string name="DontBeaMenace_title">"Don't Be a Menace to South Central While Drinking Your Juice in the Hood"</string>
+			    <string name="DontBeaMenace_year">1996</string>
+			    <string name="DontBeaMenace_rating">2 stars</string>
+			    <string name="DontBeaMenace_image">/lwCbBlIKW56f0CrItbJlqluUqfy.jpg</string>
+			    <string name="DontBeaMenace_description">NAKED-GUN-like spoof; Thoroughly predictable;</string>
+				<string-array name="DontBeaMenace_array">
+			        <item>Shawn Wayans</item>
+			        <item>Marlon Wayans</item>
+			        <item>Keenen Ivory Wayans</item>
+			        <item>Chris Spencer</item>
+			        <item>Suli McCullough</item>
+			        <item>Darrel Heath</item>
+			        <item>Helen Martin</item>
+			        <item>Isaiah Barnes</item>
+			        <item>Craig Wayans</item>
+			        <item>Kim Wayans</item>
+			        <item>Omar Epps</item>
+			        <item>Faizon Love</item>
+			        <item>Antonio Fargas</item>
+			        <item>Damon Wayans</item>
+			        <item>Bernie Mac</item>
+			    </string-array>
+				<string name="MasterandCommander_title">Master and Commander: The Far Side of the World</string>
+			    <string name="MasterandCommander_year">2003</string>
+			    <string name="MasterandCommander_rating">3 stars</string>
+			    <string name="MasterandCommander_image">/68sGkVSVxuFw7J9H6sk4GZfYZ1q.jpg</string>
+			    <string name="MasterandCommander_description">Heavier on atmosphere than on story; The Human element is nicely played and the physical production is impressive.</string>
+				<string-array name="MasterandCommander_array">
+			        <item>Russell Crowe</item>
+			        <item>Paul Bettany</item>
+			        <item>Billy Boyd</item>
+			        <item>"James D'Arcy"</item>
+			        <item>Lee Ingleby</item>
+			        <item>George Innes</item>
+			        <item>Mark Lewis Jones</item>
+			        <item>Chris Larkin</item>
+			        <item>Richard Pates</item>
+			        <item>Robert Pugh</item>
+			        <item>David Threlfall</item>
+			    </string-array>
+				<string name="LordoftheFlies_title">Lord of the Flies</string>
+			    <string name="LordoftheFlies_year">1963</string>
+			    <string name="LordoftheFlies_rating">3 stars</string>
+			    <string name="LordoftheFlies_image">/90X2Hkx1NRQ2E515YutyyVgxrVH.jpg</string>
+			    <string name="LordoftheFlies_description">Their gradual degeneration is compelling; Adapted from a novel;</string>
+				<string-array name="LordoftheFlies_array">
+			        <item>James Aubrey</item>
+			        <item>Tom Chapin</item>
+			        <item>Hugh Edwards</item>
+			        <item>Roger Elwin</item>
+			        <item>Tom Gaman</item>
+			    </string-array>
+				<string name="ReservoirDogs_title">Reservoir Dogs</string>
+			    <string name="ReservoirDogs_year">1992</string>
+			    <string name="ReservoirDogs_rating">3 stars</string>
+			    <string name="ReservoirDogs_image">/5lXUYl5dnF3vaj4Ay5tXXNFtRSv.jpg</string>
+			    <string name="ReservoirDogs_description">Flashy, maybe too flashy; Nearly every performance is better than expected.</string>
+				<string-array name="ReservoirDogs_array">
+			        <item>Harvey Keitel</item>
+			        <item>Tim Roth</item>
+			        <item>Michael Madsen</item>
+			        <item>Chris Penn</item>
+			        <item>Steve Buscemi</item>
+			        <item>Lawrence Tierney</item>
+			        <item>Randy Brooks</item>
+			        <item>Kirk Baltz</item>
+			        <item>Eddie Bunker</item>
+			        <item>Quentin Tarantino</item>
+			        <item>Steven Wright</item>
+			    </string-array>
+				<string name="LawrenceofArabia_title">Lawrence of Arabia</string>
+			    <string name="LawrenceofArabia_year">1962</string>
+			    <string name="LawrenceofArabia_rating">4 stars</string>
+			    <string name="LawrenceofArabia_image">/nmFlzcpkM1ftLhunJpRBfLt5XlX.jpg</string>
+			    <string name="LawrenceofArabia_description">Loses some momentum in the second half but still a knockout; Only way to really appreciate this film is on the big screen.</string>
+				<string-array name="LawrenceofArabia_array">
+			        <item>"Peter O'Toole"</item>
+			        <item>Alec Guinness</item>
+			        <item>Anthony Quinn</item>
+			        <item>Jack Hawkins</item>
+			        <item>Claude Rains</item>
+			        <item>Anthony Quayle</item>
+			        <item>Arthur Kennedy</item>
+			        <item>Omar Sharif</item>
+			        <item>José Ferrer</item>
+			    </string-array>
+				<string name="TheStepfordWives_title">The Stepford Wives</string>
+			    <string name="TheStepfordWives_year">1975</string>
+			    <string name="TheStepfordWives_rating">3 stars</string>
+			    <string name="TheStepfordWives_image">/sAq0pNUnJe01n7ZrCj9p3tyIzEX.jpg</string>
+			    <string name="TheStepfordWives_description">An effective chiller.</string>
+			    <string-array name="TheStepfordWives_array">
+			        <item>Katharine Ross</item>
+			        <item>Paula Prentiss</item>
+			        <item>Peter Masterson</item>
+			        <item>Nanette Newman</item>
+			        <item>"Patrick O'Neal"</item>
+			        <item>Tina Louise</item>
+			        <item>Dee Wallace</item>
+			        <item>William Prince</item>
+			    </string-array>
+				<string name="DemolitionMan_title">Demolition Man</string>
+			    <string name="DemolitionMan_year">1993</string>
+			    <string name="DemolitionMan_rating">2.5 stars</string>
+			    <string name="DemolitionMan_image">/fj6nbVd7FVENNLtusyd1U8bcUFu.jpg</string>
+			    <string name="DemolitionMan_description">"Fast, surprisingly funny, bloodletter is still only marginally brainier than the lead actor's previous film."</string>
+				<string-array name="DemolitionMan_array">
+			        <item>Sylvester Stallone</item>
+			        <item>Wesley Snipes</item>
+			        <item>Sandra Bullock</item>
+			        <item>Nigel Hawthorne</item>
+			        <item>Benjamin Bratt</item>
+			        <item>Bob Gunton</item>
+			        <item>Glenn Shadix</item>
+			        <item>Denis Leary</item>
+			        <item>Jack Black</item>
+			        <item>Jesse Ventura</item>
+			    </string-array>
+				<string name="SnakesonaPlane_title">Snakes on a Plane</string>
+			    <string name="SnakesonaPlane_year">2006</string>
+			    <string name="SnakesonaPlane_rating">2.5 stars</string>
+			    <string name="SnakesonaPlane_image">/iF5ix0kDBBdcJpMTAwa41znmxC1.jpg</string>
+			    <string name="SnakesonaPlane_description">"You know what you're getting with this film;  The premise is fun, but a premise is just about all there is."</string>
+				<string-array name="SnakesonaPlane_array">
+			        <item>Samuel L. Jackson</item>
+			        <item>Julianna Margulies</item>
+			        <item>Nathan Phillips</item>
+			        <item>Rachel Blanchard</item>
+			        <item>Flex Alexander</item>
+			        <item>Kenan Thompson</item>
+			        <item>Lin Shaye</item>
+			        <item>David Koechner</item>
+			        <item>Bobby Cannavale</item>
+			    </string-array>
+				<string name="TheTerminal_title">The Terminal</string>
+			    <string name="TheTerminal_year">2004</string>
+			    <string name="TheTerminal_rating">3 stars</string>
+			    <string name="TheTerminal_image">/lCSjseei1M2vqmuzxadJUiL8x5D.jpg</string>
+			    <string name="TheTerminal_description">The director asks us to accept a sweet, optimistic fable - not easy for some people to do these days.</string>
+				<string-array name="TheTerminal_array">
+			        <item>Tom Hanks</item>
+			        <item>Catherine Zeta-Jones</item>
+			        <item>Stanley Tucci</item>
+			        <item>Chi McBride</item>
+			        <item>Diego Luna</item>
+			        <item>Barry Shabaka Henley</item>
+			        <item>Kumar Pallana</item>
+			        <item>Zoe Saldana</item>
+			        <item>Eddie Jones</item>
+			        <item>Jude Ciccolella</item>
+			        <item>Michael Nouri</item>
+			        <item>Benny Golson</item>
+			    </string-array>
+				<string name="PulpFiction_title">Pulp Fiction</string>
+			    <string name="PulpFiction_year">1994</string>
+			    <string name="PulpFiction_rating">3.5 stars</string>
+			    <string name="PulpFiction_image">/ftU5QLGLYobaCOezlbzcyPeK0TA.jpg</string>
+			    <string name="PulpFiction_description">"The violent, pumped-up movie isn't for every taste - certainly not for the squemish - but its got more vitality than almost any other film of 1994."</string>
+				<string-array name="PulpFiction_array">
+			        <item>John Travolta</item>
+			        <item>Samuel L. Jackson</item>
+			        <item>Uma Thurman</item>
+			        <item>Harvey Keitel</item>
+			        <item>Tim Roth</item>
+			        <item>Amanda Plummer</item>
+			        <item>Maria de Medeiros</item>
+			        <item>Ving Rhames</item>
+			        <item>Eric Stoltz</item>
+			        <item>Rosanna Arquette</item>
+			        <item>Christopher Walken</item>
+			    </string-array>
+				<string name="Bruno_title">Brüno</string>
+			    <string name="Bruno_year">2009</string>
+			    <string name="Bruno_rating">2.5 stars</string>
+			    <string name="Bruno_image">/HsE93JXe40TI2AkJP1e243wEGB.jpg</string>
+			    <string name="Bruno_description">Some real laughs, but many hair-raising and painfully uncomfortable moments as well.</string>
+				<string-array name="Bruno_array">
+			        <item>Sacha Baron Cohen</item>
+			        <item>Gustaf Hammarsten</item>
+			        <item>Bono</item>
+			        <item>Chris Martin</item>
+			        <item>Elton John</item>
+			        <item>Slash</item>
+			        <item>Snoop Dogg</item>
+			        <item>Sting</item>
+			    </string-array>
+				<string name="CastAway_title">Cast Away</string>
+			    <string name="CastAway_year">2000</string>
+			    <string name="CastAway_rating">3.5 stars</string>
+			    <string name="CastAway_image">/lDWk6l6iAEkCeSDVdS5wbTuMV9i.jpg</string>
+			    <string name="CastAway_description">No narration, no music, just great film making.</string>
+				<string-array name="CastAway_array">
+			        <item>Tom Hanks</item>
+			        <item>Helen Hunt</item>
+			        <item>Nick Searcy</item>
+			        <item>Lari White</item>
+			        <item>Chris Noth</item>
+			        <item>Jennifer Lewis</item>
+			        <item>Wilson</item>
+			    </string-array>
+				<string name="ThePerfectStorm_title">The Perfect Storm</string>
+			    <string name="ThePerfectStorm_year">2000</string>
+			    <string name="ThePerfectStorm_rating">2.5 stars</string>
+			    <string name="ThePerfectStorm_image">/ht1Sgx744CIYeFgsZTdwwK70HyO.jpg</string>
+			    <string name="ThePerfectStorm_description">Noisy, exciting action but its characters and story points are bathed in cliche.</string>
+				<string-array name="ThePerfectStorm_array">
+			        <item>George Clooney</item>
+			        <item>Mark Wahlberg</item>
+			        <item>John C. Reilly</item>
+			        <item>Diane Lane</item>
+			        <item>William Fichtner</item>
+			        <item>John Hawkes</item>
+			        <item>Allen Payne</item>
+			        <item>Mary Elizabeth Mastrantonio</item>
+			        <item>Karen Allen</item>
+			        <item>Cherry Jones</item>
+			        <item>Bob Gunton</item>
+			        <item>Christopher McDonald</item>
+			        <item>Michael Ironside</item>
+			    </string-array>
+				<string name="Jaws_title">Jaws</string>
+			    <string name="Jaws_year">1975</string>
+			    <string name="Jaws_rating">4 stars</string>
+			    <string name="Jaws_image">/m6wCa8h9oEsQ1un8rMczik5izXI.jpg</string>
+			    <string name="Jaws_description">A rare case of a bubble-gum story scoring a terrific movie.</string>
+				<string-array name="Jaws_array">
+			        <item>Roy Scheider</item>
+			        <item>Robert Shaw</item>
+			        <item>Richard Dreyfuss</item>
+			        <item>Lorraine Gary</item>
+			        <item>Murray Hamilton</item>
+			        <item>Jeffrey Kramer</item>
+			        <item>Susan Backlinie</item>
+			        <item>Carl Gottlieb</item>
+			    </string-array>
+				<string name="OpenWater_title">Open Water</string>
+			    <string name="OpenWater_year">2004</string>
+			    <string name="OpenWater_rating">3 stars</string>
+			    <string name="OpenWater_image">/uiDOFEJgeFHymNNwrcsKE88vfhg.jpg</string>
+			    <string name="OpenWater_description">"Avoids hollywood clichés;  Emotions are stripped raw."</string>
+				<string-array name="OpenWater_array">
+			        <item>Blanchard Ryan</item>
+			        <item>Daniel Travis</item>
+			    </string-array>
+				<string name="Lifeboat_title">Lifeboat</string>
+			    <string name="Lifeboat_year">1944</string>
+			    <string name="Lifeboat_rating">3.5 stars</string>
+			    <string name="Lifeboat_image">/jzaj6u8wBltkYqJHCxux0zH4nEb.jpg</string>
+			    <string name="Lifeboat_description">Only this director would take on the challenge of such a film - and succeed</string>
+				<string-array name="Lifeboat_array">
+			        <item>Tallulah Bankhead</item>
+			        <item>William Bendix</item>
+			        <item>Walter Slezak</item>
+			        <item>Mary Anderson</item>
+			        <item>John Hodiak</item>
+			        <item>Henry Hull</item>
+			        <item>Hume Cronyn</item>
+			        <item>Canada Lee</item>
+			    </string-array>
+</resources>

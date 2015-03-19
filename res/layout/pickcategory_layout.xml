@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>   
+
+<RelativeLayout 
+    android:background="#ffffffff" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <TextView 
+        android:id="@+id/game_msg" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="15.0dip" 
+        android:layout_centerHorizontal="true"         
+        android:text="Player turn" 
+        android:textSize="45.0sp" 
+        android:textColor="#ff990000"         
+        android:fontFamily="sans-serif-condensed" />
+
+	    <TextView 
+	        android:id="@id/section" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" 
+	        android:layout_marginTop="20.0dip" 
+	        android:layout_below="@id/game_msg" 
+	        android:layout_centerHorizontal="true" 
+	        android:layout_centerVertical="true"	        
+	        android:text="Choose a Category:" 
+	        android:textSize="25.0sp" />
+	<RelativeLayout
+   	android:id="@+id/category_set_1" 	    
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+   	android:layout_below="@id/section" 
+   	android:layout_marginTop="40.0dip"    
+    android:gravity="center">	    
+	    <Button 
+	        android:id="@+id/category1" 
+	        android:background="@drawable/categorybutton" 
+	        android:layout_width="275.0dp" 
+	        android:layout_height="wrap_content" 
+	        android:layout_centerHorizontal="true" 
+	        android:layout_centerVertical="true" 
+	        android:textSize="22.0sp" 
+	        android:textColor="#ffffffff" 	        
+	        android:onClick="startBtn1MovieSelection" />
+   	
+	    <Button
+	        android:id="@+id/category1_hint"
+	        android:layout_width="30.0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/category1"
+	        android:layout_alignTop="@id/category1"
+	        android:layout_toRightOf="@id/category1"
+	        android:background="@drawable/hintcolor"
+	        android:text="\?"
+	        android:textColor="#ffffffff"
+	        android:textSize="22.0sp"
+	        android:onClick="btn1Hint"/>
+	</RelativeLayout>
+	<RelativeLayout
+   	android:id="@+id/category_set_2" 	    
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+   	android:layout_below="@id/category_set_1" 
+   	android:layout_marginTop="40.0dip"
+    android:gravity="center">
+    <Button 
+        android:id="@+id/category2"  
+        android:layout_width="275.0dp" 
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true" 
+        android:layout_centerVertical="true" 
+        android:background="@drawable/categorybutton"        
+        android:textSize="22.0sp" 
+        android:textColor="#ffffffff"
+        android:onClick="startBtn2MovieSelection"/>
+    
+    <Button
+        android:id="@+id/category2_hint"
+        android:layout_width="30.0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/category2"
+        android:layout_alignTop="@+id/category2"
+        android:layout_toRightOf="@id/category2"
+        android:background="@drawable/hintcolor"
+        android:text="\?"
+        android:textColor="#ffffffff"
+        android:textSize="22.0sp"
+        android:onClick="btn2Hint"/>
+    </RelativeLayout>
+   	<RelativeLayout
+   	android:id="@+id/category_set_3"   	    
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+   	android:layout_below="@id/category_set_2"  
+   	android:layout_marginTop="40.0dip"
+    android:gravity="center">
+    <Button 
+        android:id="@+id/category3" 
+        android:layout_width="275.0dip" 
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true" 
+        android:layout_centerVertical="true" 
+        android:background="@drawable/categorybutton"         
+        android:onClick="startBtn3MovieSelection"
+        android:textSize="22.0sp" 
+        android:textColor="#ffffffff" />
+    
+    <Button
+        android:id="@+id/category3_hint"
+        android:layout_width="30.0dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/category3"
+        android:layout_alignTop="@+id/category3"
+        android:layout_toRightOf="@id/category3"
+        android:background="@drawable/hintcolor"
+        android:text="\?"
+        android:textColor="#ffffffff"
+        android:textSize="22.0sp"
+        android:onClick="btn3Hint"/>
+    </RelativeLayout>
+    
+</RelativeLayout>
