@@ -306,7 +306,7 @@
 				    <item>RevengeoftheNerds</item>
 					<item>Rudy</item>
 				</string-array>
-				<string name="DayBeforeTomorrow_hint">"Movies that take place all in one day"</string>
+				<string name="DayBeforeTomorrow_hint">"Films that take place all in one day"</string>
 				<string-array name="DayBeforeTomorrow_array">
 				    <item>FerrisBuellersDayOff</item>
 				    <item>HaroldAndKumarGoToWhiteCastle</item>
@@ -317,6 +317,13 @@
 				    <item>TrainingDay</item>
 				    <item>DieHard</item>
 				</string-array>
+				<string name="ThatsWhatSheSaid_hint">"Films that have a female narrator"</string>
+				<string-array name="ThatsWhatSheSaid_array">
+				    <item>StrangerThanFiction</item>
+				    <item>Terminator2</item>
+				    <item>MeanGirls</item>
+					<item>TheLovelyBones</item>
+				</string-array>				
 
 	<!--  All  Movies    -->
 				<!--  
@@ -2819,4 +2826,75 @@
 			        <item>Hume Cronyn</item>
 			        <item>Canada Lee</item>
 			    </string-array>
+				<string name="StrangerThanFiction_title">Stranger Than Fiction</string>
+			    <string name="StrangerThanFiction_year">2006</string>
+			    <string name="StrangerThanFiction_rating">3 stars</string>
+			    <string name="StrangerThanFiction_image">/b2lFQMEeukJYqQuQB7CQN0CJnks.jpg</string>
+			    <string name="StrangerThanFiction_description">Clever concept; It has a fine cast;Creative visual interpretation.</string>
+				<string-array name="StrangerThanFiction_array">
+			        <item>Will Ferrell</item>
+			        <item>Maggie Gyllenhaal</item>
+			        <item>Emma Thompson</item>
+			        <item>Dustin Hoffman</item>
+			        <item>Queen Latifah</item>
+			        <item>Tony Hale</item>
+			        <item>Tom Hulce</item>
+			        <item>Linda Hunt</item>
+					<item>Kristin Chenoweth</item>
+			    </string-array>	
+				<string name="Terminator2_title">Terminator 2: Judgement Day</string>
+			    <string name="Terminator2_year">1991</string>
+			    <string name="Terminator2_rating">2.5 stars</string>
+			    <string name="Terminator2_image">/lXoalUI3jBgBHPODDiWfkWo6cUE.jpg</string>
+			    <string name="Terminator2_description">Knocks your socks off; Lacks freshness.</string>
+				<string-array name="Terminator2_array">
+			        <item>Arnold Schwarzenegger</item>
+			        <item>Linda Hamilton</item>
+			        <item>Edward Furlong</item>
+			        <item>Robert Patrick</item>
+			        <item>Earl Boen</item>
+			        <item>Joe Morton</item>
+			        <item>S. Epatha Merkerson</item>
+			        <item>Castulo Guerra</item>
+					<item>Danny Cooksey</item>
+					<item>Jenette Goldstein</item>
+					<item>Xander Berkeley</item>
+			    </string-array>
+				<string name="MeanGirls_title">Mean Girls</string>
+			    <string name="MeanGirls_year">2004</string>
+			    <string name="MeanGirls_rating">2.5 stars</string>
+			    <string name="MeanGirls_image">/mysdd7fPyvhPdlOLgeruv4J2olB.jpg</string>
+			    <string name="MeanGirls_description">Sounds awfully familiar. Reverts to formula, but still a cut above the norm.</string>
+				<string-array name="MeanGirls_array">
+			        <item>Lindsay Lohan</item>
+			        <item>Tina Fey</item>
+			        <item>Rachel McAdams</item>
+			        <item>Tim Meadows</item>
+			        <item>Ana Gasteyer</item>
+			        <item>Amy Poehler</item>
+			        <item>Lacey Chabert</item>
+			        <item>Amanda Seyfried</item>
+					<item>Jonathan Bennett</item>
+					<item>Lizzy Caplan</item>
+					<item>Daniel Franzese</item>
+					<item>Neil Flynn</item>
+				</string-array>
+				<string name="TheLovelyBones_title">The Lovely Bones</string>
+			    <string name="TheLovelyBones_year">2009</string>
+			    <string name="TheLovelyBones_rating">2.5 stars</string>
+			    <string name="TheLovelyBones_image">/6y3Rol6EjJvW1FT3nqcWXodS6gA.jpg</string>
+			    <string name="TheLovelyBones_description">Well made, well acted;Suffers from over-abundant, heavy-handed images.</string>
+				<string-array name="TheLovelyBones_array">
+			        <item>Mark Wahlberg</item>
+			        <item>Rachel Weisz</item>
+			        <item>Susan Sarandon</item>
+			        <item>Stanley Tucci</item>
+			        <item>Michael Imperioli</item>
+			        <item>Saoirse Ronan</item>
+			        <item>Rose Melver</item>
+			        <item>Christian Ashdale</item>
+					<item>Reece Ritchie</item>
+					<item>Andrew James Allen</item>
+			    </string-array>					
+		
 </resources>

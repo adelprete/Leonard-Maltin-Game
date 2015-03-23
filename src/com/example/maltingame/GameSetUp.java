@@ -92,6 +92,7 @@ public class GameSetUp extends ActionBarActivity{
 		category_map.put("Smaug Life", 6);
 		category_map.put("Perfect Dorm", 7);
 		category_map.put("Day Before Tomorrow", 8);
+		category_map.put("Thats What She Said", 4);		
 		
 		Bundle bundle =new Bundle();
 		bundle.putString("num_players", num_players);
