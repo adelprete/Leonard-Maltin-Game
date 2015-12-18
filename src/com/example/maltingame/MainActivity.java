@@ -112,7 +112,7 @@ public class MainActivity extends ActionBarActivity {
 		please_wait.setText("Connecting Please wait...");
 		refresh_btn.setVisibility(View.GONE);
 		
-		this.new PingWebpageTask().execute("https://www.officepoolhub.com/maltingame");
+		this.new PingWebpageTask().execute("http://www.saturdayball.com");
 	}
 	
 	public void goToGameSetup(View view){
